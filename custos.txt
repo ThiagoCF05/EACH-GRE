@@ -1,0 +1,57 @@
+type	theater	0.0
+type	pub	0.0
+type	restaurant	0.0
+type	cafe	0.0
+type	drugstore	0.0
+type	subway	0.0
+type	monument	0.0
+type	church	0.0
+type	park	0.0
+type	bank	0.0
+type	street	0.0
+type	government	0.0
+type	position	0.0
+name	aqui ha peixe	0.0
+name	baixa/chiado	0.0
+name	antonio ribeiro chiado	0.0
+name	o sacramento	0.0
+name	chiado	0.0
+name	taberna do chiado	0.0
+name	internacional	0.0
+name	cortez	0.0
+name	barral	0.0
+name	gouveia	0.0
+name	rua nova da trindade	0.0
+name	rua serpa pinto	0.0
+name	esquina da rua serpa pinto	0.0
+name	rua garret	0.0
+name	largo do picadeiro	0.0
+name	rua antonio maria cardoso	0.0
+name	rua anchieta	0.0
+name	rua capelo	0.0
+name	esquina da rua capelo	0.0
+name	esquina do largo do picadeiro	0.0
+name	esquina da rua anchieta	0.0
+name	governo civil	0.0
+name	largo do carmo	0.0
+name	rua ivens	0.0
+name	rua nova do almada	0.0
+name	esquina da rua garret	0.0
+name	esquina da nova do almada	0.0
+name	rua do ouro	0.0
+name	rua da vitoria	0.0
+name	rua dos sapateiros	0.0
+name	esquina da rua da vitoria	0.0
+name	esquina da rua dos sapateiros	0.0
+rel_location	in	0.0
+rel_location	right-of	1.0
+rel_location	left-of	1.0
+rel_location	between	1000.0
+rel_location	near-to	1.0
+rel_location	in-front-of	2.0
+rel_location	behind	2.0
+rel_location	have	1000.0
+rel_location	northeast	2.0
+rel_location	northwest	2.0
+rel_location	southeast	2.0
+rel_location	southwest	2.0
