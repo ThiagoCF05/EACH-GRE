@@ -10,11 +10,28 @@ def parse(A):
             for value in A[target][property]:
                 element = target + '.' + '.' + property + '.' + value
                 result.append(element)
+                
+                element = target + '.' + property
+                result.append(element)
+    return set(result)
+
+def simpleParse(A):
+    result = []
+    for target in A.keys():
+        for property in A[target].keys():
+            for value in A[target][property]:
+                element = property + '.' + value
+                result.append(element)
+                
+                element = property
+                result.append(element)
     return set(result)
 
 def dice(A, B):
-    A = parse(A)
-    B = parse(B)
+    if type(A) != set:
+        A = parse(A)
+    if type(B) != set:
+        B = parse(B)
     
     lenA = len(A)
     lenB = len(B)
@@ -22,10 +39,12 @@ def dice(A, B):
     return (2. * len(A.intersection(B))) / (lenA + lenB)
 
 def masi(A, B):
-    A = parse(A)
-    B = parse(B)
+    if type(A) != set:
+        A = parse(A)
+    if type(B) != set:
+        B = parse(B)
     
-    division = (len(A.intersection(B))) / (len(A.union(B)))
+    division = float(len(A.intersection(B))) / (len(A.union(B)))
     
     weight = 0.0
     

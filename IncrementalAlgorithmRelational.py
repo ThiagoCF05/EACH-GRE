@@ -101,16 +101,16 @@ class IncrementalAlgorithmRelational(object):
         landmarks = self.dominio[target]['near-to']
         
         # seguir alguma medida de saliencia
-        for atributo in self.atributosRelacionais[target]:
-            for element in self.dominio[target][atributo]:
-                if element[0:3] == "str" or element[0:3] == "pos":
-                    candidateLandmarks.append([atributo, element])
-                elif element in landmarks:
-                    candidateLandmarks.append([atributo, element])
-        
 #        for atributo in self.atributosRelacionais[target]:
 #            for element in self.dominio[target][atributo]:
-#                candidateLandmarks.append([atributo, element])
+#                if element[0:3] == "str" or element[0:3] == "pos":
+#                    candidateLandmarks.append([atributo, element])
+#                elif element in landmarks:
+#                    candidateLandmarks.append([atributo, element])
+        
+        for atributo in self.atributosRelacionais[target]:
+            for element in self.dominio[target][atributo]:
+                candidateLandmarks.append([atributo, element])
         
         return candidateLandmarks
     
