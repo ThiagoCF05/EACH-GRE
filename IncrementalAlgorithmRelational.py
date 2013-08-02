@@ -13,7 +13,7 @@ class IncrementalAlgorithmRelational(object):
         self.preferred_attributes = preferred_attributes
         self.distractors = {}
         # restricao de contexto
-        self.distractors[target] = self.initializeDistractors(target, False)
+        self.distractors[target] = self.initializeDistractors(target, False, self.dominio)
         
         self.atributos = {}
         self.atributosRelacionais = {}
@@ -44,7 +44,7 @@ class IncrementalAlgorithmRelational(object):
                 for distractor in self.distractors[target].keys():
                     previousDistractor[distractor] = self.distractors[target][distractor]
                 
-                self.distractors[target] = self.findDistractorsByProperties(properties, target)
+                self.distractors[target] = self.findDistractorsByProperties(properties, target, self.distractors)
                 
                 if len(self.distractors[target]) < len(previousDistractor):
                     self.description[target][atributo] = [element]
@@ -76,7 +76,7 @@ class IncrementalAlgorithmRelational(object):
             for distractor in self.distractors[target].keys():
                 previousDistractor[distractor] = self.distractors[target][distractor]
                 
-            self.distractors[target] = self.findDistractorsByProperties(properties, target)
+            self.distractors[target] = self.findDistractorsByProperties(properties, target, self.distractors)
             
             if len(self.distractors[target]) < len(previousDistractor):
                 if element not in self.description.keys():
@@ -85,7 +85,7 @@ class IncrementalAlgorithmRelational(object):
                     else:
                         self.description[target][atributo] = [element]
                     [self.atributos[element], self.atributosRelacionais[element]] = self.listaAtributos(element)
-                    self.distractors[element] = self.initializeDistractors(element, False)
+                    self.distractors[element] = self.initializeDistractors(element, False, self.dominio)
                     self.description[element] = {}
                     self.description = self.searchDescription(element)
             
@@ -146,21 +146,21 @@ class IncrementalAlgorithmRelational(object):
         else:
             return False
     
-    def initializeDistractors(self, target, contextRestriction):
+    def initializeDistractors(self, target, contextRestriction, dominio = {}):
         distractors = {}
         if contextRestriction:
-            for element in self.dominio[target]['near-to']:
-                distractors[element] = self.dominio[element]
-            distractors[target] = self.dominio[target]
+            for element in dominio[target]['near-to']:
+                distractors[element] = dominio[element]
+            distractors[target] = dominio[target]
         else:
-            distractors = self.dominio
+            distractors = dominio
         
         return distractors
             
     
-    def findDistractorsByProperties(self, properties = {}, target = str):
+    def findDistractorsByProperties(self, properties = {}, target = str, distract = {}):
         distractors = {}
-        dominio = self.distractors[target]
+        dominio = distract[target]
         for property in properties.keys():
             distractors = {}
             for element in properties[property]:

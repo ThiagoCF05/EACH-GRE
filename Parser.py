@@ -86,10 +86,68 @@ def parseAnnotation():
                             if propriedade not in description[target].keys():
                                 description[target][propriedade] = []
                             
-                            description[target][propriedade].append(valor)
+                            valor = valor.split(',')
+                            
+                            for value in valor:
+                                description[target][propriedade].append(value)
     
             if objeto_id not in descriptions.keys():
                 descriptions[objeto_id] = []
             descriptions[objeto_id].append(description) 
-    return descriptions            
-#parse()
+    return descriptions  
+
+def parseAnnotations():
+    dominio = parseDominio()
+    expressoes = parseAnnotation()
+    
+    newExpressoes = {}
+    
+    for key in expressoes.keys():
+        if key not in newExpressoes.keys():
+            newExpressoes[key] = []
+        for anotacao in expressoes[key]:
+            newAnotacao = {}
+            for target in anotacao.keys():
+                if target not in ['d1', 'd2', 'd3', 'd4']:
+                    newAnotacao[target] = {}
+                    for propriedade in anotacao[target].keys():
+                        newAnotacao[target][propriedade] = []
+                        for row in anotacao[target][propriedade]:
+                            elements = row.split('with')
+                            for element in elements:
+                                element = element.strip()
+                                if element in ['d1', 'd2', 'd3', 'd4']:
+                                    properties = {}
+                                    for atributo in anotacao[element].keys():
+                                        for value in anotacao[element][atributo]:
+                                            if atributo not in properties.keys():
+                                                properties[atributo] = []
+                                            properties[atributo].append(value)
+                                            
+                                    distractors = findDistractorsByProperties(properties, dominio)
+                                    if len(distractors.keys()) == 1:
+                                        newElement = distractors.keys()[0]
+                                        newAnotacao[target][propriedade].append(newElement)
+                                        newAnotacao[newElement] = properties
+                                    else:
+                                        newAnotacao[target][propriedade].append(element)
+                                        newAnotacao[element] = anotacao[element]
+                                    
+                                else:
+                                    newAnotacao[target][propriedade].append(element)
+            newExpressoes[key].append(newAnotacao)
+    return newExpressoes
+
+
+def findDistractorsByProperties(properties = {}, distract = {}):
+    distractors = {}
+    dominio = distract
+    for property in properties.keys():
+        distractors = {}
+        for element in properties[property]:
+            for object in dominio.keys():
+                if element in dominio[object][property]:
+                    distractors[object] = dominio[object]
+            dominio = distractors
+            
+    return distractors

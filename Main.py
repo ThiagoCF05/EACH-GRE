@@ -12,7 +12,8 @@ from IncrementalAlgorithmRelational import *
 from Assurance import *
 
 if __name__ == '__main__':
-    anotacoes = parseAnnotation()
+    anotacoes = parseAnnotations()
+    print anotacoes
     dominio = parseDominio()
     
     preferenced_attributes = ['type','name','other','in','right-of','left-of','near-to',
@@ -23,15 +24,15 @@ if __name__ == '__main__':
         relational = IncrementalAlgorithmRelational(dominio, entidade, preferenced_attributes)
         expressao = relational.run()
         
-        A = simpleParse(expressao)
+        A = parse(expressao)
         print 100 * '*'
         print entidade
         for anotacao in anotacoes[entidade]:
-            B = simpleParse(anotacao)
+            B = parse(anotacao)
             valueDice = dice(A,B)
             valueMasi = masi(A,B)
             
-            print str(anotacao) + "\t" + str(expressao) + "\t" + str(valueDice) + "\t" + str(valueMasi)
+            print str(valueDice) + "\t" + str(valueMasi) + "\t" + str(anotacao) + "\t" + str(expressao)
         
         
 #    expressoes = {}

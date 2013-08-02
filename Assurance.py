@@ -7,12 +7,21 @@ def parse(A):
     result = []
     for target in A.keys():
         for property in A[target].keys():
+            between = ""
             for value in A[target][property]:
-                element = target + '.' + '.' + property + '.' + value
-                result.append(element)
+                if property == "between/corner":
+                    if between == "":
+                        between = target + '.' + property + '.' + value
+                    else: 
+                        between = between + '.' + value
+                else:
+                    element = target + '.' + property + '.' + value
+                    result.append(element)
                 
                 element = target + '.' + property
                 result.append(element)
+            if between != "":
+                result.append(between)
     return set(result)
 
 def simpleParse(A):
