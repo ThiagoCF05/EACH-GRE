@@ -7,13 +7,14 @@ Created on 29/07/2013
 class IncrementalAlgorithmRelational(object):
 
 
-    def __init__(self, dominio = {}, target = str, preferred_attributes = []):
+    def __init__(self, dominio = {}, target = str, preferred_attributes = [], restricaoContexto = False):
         self.dominio = dominio
         self.target = target
         self.preferred_attributes = preferred_attributes
         self.distractors = {}
+        self.restricaoContexto = restricaoContexto
         # restricao de contexto
-        self.distractors[target] = self.initializeDistractors(target, False, self.dominio)
+        self.distractors[target] = self.initializeDistractors(target, restricaoContexto, self.dominio)
         
         self.atributos = {}
         self.atributosRelacionais = {}
@@ -85,7 +86,7 @@ class IncrementalAlgorithmRelational(object):
                     else:
                         self.description[target][atributo] = [element]
                     [self.atributos[element], self.atributosRelacionais[element]] = self.listaAtributos(element)
-                    self.distractors[element] = self.initializeDistractors(element, False, self.dominio)
+                    self.distractors[element] = self.initializeDistractors(element, self.restricaoContexto, self.dominio)
                     self.description[element] = {}
                     self.description = self.searchDescription(element)
             

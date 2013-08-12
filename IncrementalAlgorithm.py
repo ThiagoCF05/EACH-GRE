@@ -18,7 +18,6 @@ class IncrementalAlgorithm(object):
 		for atributo in self.atributos:
 			for element in self.dominio[self.target][atributo]:
 				properties = {}
-				properties = {}
 				for key in self.description:
 					properties[key] = self.description
 				properties[atributo] = element

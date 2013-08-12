@@ -44,6 +44,132 @@ def parseDominio():
 #    outfile.close()
     return mapa
 
+def test():
+    propriedades = []
+    descriptions = {}
+    
+    file = open("anotacoes.csv", "r")
+    doc = file.readline()
+    file.close()
+    doc = doc.split('\r')
+    
+    newDoc = ""
+    linha = 0
+    for row in doc:
+        linha = linha + 1
+        elements = row.split(';')
+        if linha == 1:
+            newDoc = newDoc + row + "\n"
+        else:
+            for i in range(0,len(elements)):
+                if elements[i].strip() == "":
+                    pass
+                elif i == 7 or i == 35:
+                    if elements[i] != "":
+                        lis = elements[i][1:len(elements[i])-1].split(",")
+                        for j in range(0, len(lis)):
+                            if lis[j].strip() == "d1":
+                                if i <= 27:
+                                    lis[j] = elements[11]
+                                else:
+                                    lis[j] = elements[39]
+                            elif lis[j].strip() == "d2":
+                                if i <= 27:
+                                    lis[j] = elements[11+4]
+                                else:
+                                    lis[j] = elements[39+4]   
+                            elif lis[j].strip() == "d3":
+                                if i <= 27:
+                                    lis[j] = elements[11+(2*4)]
+                                else:
+                                    lis[j] = elements[39+(2*4)]
+                            elif lis[j].strip() == "d4":
+                                if i <= 27:
+                                    lis[j] = elements[11+(3*4)]
+                                else:
+                                    lis[j] = elements[11+(3*4)]
+                            
+                        newElements = "["      
+                        lenLis = 0     
+                        for l in lis:
+                            lenLis = lenLis+1
+                            if lenLis == len(lis):
+                                newElements = newElements + l
+                            else:
+                                newElements = newElements + l + ","
+                            
+                        elements[i] = newElements + "]"
+                else:
+                    if len(elements[i].split(",")) == 1:
+                        if elements[i].strip() == "d1":
+                            if i <= 27:
+                                elements[i] = elements[11]
+                            else:
+                                elements[i] = elements[39]
+                        elif elements[i].strip() == "d2":
+                            if i <= 27:
+                                elements[i] = elements[11+4]
+                            else:
+                                elements[i] = elements[39+4]   
+                        elif elements[i].strip() == "d3":
+                            if i <= 27:
+                                elements[i] = elements[11+(2*4)]
+                            else:
+                                elements[i] = elements[39+(2*4)]
+                        elif elements[i].strip() == "d4":
+                            if i <= 27:
+                                elements[i] = elements[11+(3*4)]
+                            else:
+                                elements[i] = elements[39+(3*4)]
+                    else:
+                        lis = elements[i].split(",")
+                        for j in range(0, len(lis)):
+                            if lis[j].strip() == "d1":
+                                if i <= 27:
+                                    lis[j] = elements[11]
+                                else:
+                                    lis[j] = elements[39]
+                            elif lis[j].strip() == "d2":
+                                if i <= 27:
+                                    lis[j] = elements[11+4]
+                                else:
+                                    lis[j] = elements[39+4]   
+                            elif lis[j].strip() == "d3":
+                                if i <= 27:
+                                    lis[j] = elements[11+(2*4)]
+                                else:
+                                    lis[j] = elements[39+(2*4)]
+                            elif lis[j].strip() == "d4":
+                                if i <= 27:
+                                    lis[j] = elements[11+(3*4)]
+                                else:
+                                    lis[j] = elements[11+(3*4)]
+                        
+                        newElements = ""      
+                        lenLis = 0     
+                        for l in lis:
+                            lenLis = lenLis+1
+                            if lenLis == len(lis):
+                                newElements = newElements + l
+                            else:
+                                newElements = newElements + l + ","
+                            
+                        elements[i] = newElements
+            
+            newElements = ""
+            pos = 0
+            for element in elements:
+                pos = pos + 1
+                if pos == len(elements):
+                    newElements = newElements + element + "\r"
+                else:
+                    newElements = newElements + element + ";"
+            newDoc = newDoc + newElements
+    
+    file = open("anotacoes_new.csv", "w")
+    doc = file.write(newDoc)
+    file.close()
+
 def parseAnnotation():
     propriedades = []
     descriptions = {}
@@ -59,6 +185,8 @@ def parseAnnotation():
         elements = row.split(';')
         if linha == 1:
             for element in elements:
+                if element == "":
+                    break
                 propriedades.append(element.strip())
         else:
             description = {}
@@ -100,8 +228,7 @@ def parseAnnotations():
     dominio = parseDominio()
     expressoes = parseAnnotation()
     
-    newExpressoes = {}
-    
+    newExpressoes = {}  
     for key in expressoes.keys():
         if key not in newExpressoes.keys():
             newExpressoes[key] = []
@@ -137,6 +264,7 @@ def parseAnnotations():
                                     newAnotacao[target][propriedade].append(element)
             newExpressoes[key].append(newAnotacao)
     return newExpressoes
+
 
 
 def findDistractorsByProperties(properties = {}, distract = {}):

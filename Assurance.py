@@ -3,6 +3,13 @@ Created on 31/07/2013
 
 @author: thiagocastroferreira
 '''
+def parseProperty(A):
+    result = []
+    for target in A.keys():
+        for property in A[target].keys():
+            result.append(property)
+    return set(result)
+
 def parse(A):
     result = []
     for target in A.keys():
@@ -45,7 +52,10 @@ def dice(A, B):
     lenA = len(A)
     lenB = len(B)
     
-    return (2. * len(A.intersection(B))) / (lenA + lenB)
+    if lenA == 0 and lenB == 0:
+        return 0
+    else:
+        return (2. * len(A.intersection(B))) / (lenA + lenB)
 
 def masi(A, B):
     if type(A) != set:
