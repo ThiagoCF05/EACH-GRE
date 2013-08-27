@@ -1,0 +1,999 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DOMAIN>
+	<CONTEXT ID="abs1" IMAGE="abs1.png">
+
+		<ENTITY ID="e1" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="hpos" VALUE="centre" />
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+		</ENTITY>
+
+		<ENTITY ID="e2" FUNCTION="target">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="left" VALUE="q2" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="e3" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="e4" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="hpos" VALUE="centre" />
+			<ATTRIBUTE NAME="vpos" VALUE="bottom" />
+		</ENTITY>
+
+		<ENTITY ID="q1" FUNCTION="distractor-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="red" />
+			<ATTRIBUTE NAME="left" VALUE="c2" />
+			<ATTRIBUTE NAME="right" VALUE="e2" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="bottom" />
+		</ENTITY>
+
+		<ENTITY ID="q2" FUNCTION="target-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="left" VALUE="c1" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="c1" FUNCTION="target-other">
+			<ATTRIBUTE NAME="type" VALUE="circle" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="right" VALUE="q2" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="c2" FUNCTION="distractor-other">
+			<ATTRIBUTE NAME="type" VALUE="circle" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="right" VALUE="q1" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="bottom" />
+		</ENTITY>
+
+	</CONTEXT>
+
+
+
+
+
+
+
+
+
+
+	<CONTEXT ID="abs3" IMAGE="abs3.png">
+
+		<ENTITY ID="e1" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="hpos" VALUE="centre" />
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+		</ENTITY>
+
+		<ENTITY ID="e2" FUNCTION="target">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="right" VALUE="q1" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="e3" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="bottom" />
+		</ENTITY>
+
+		<ENTITY ID="e4" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="hpos" VALUE="centre" />
+			<ATTRIBUTE NAME="vpos" VALUE="bottom" />
+		</ENTITY>
+
+		<ENTITY ID="q1" FUNCTION="target-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="left" VALUE="e2" />
+			<ATTRIBUTE NAME="right" VALUE="c1" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="q2" FUNCTION="distractor-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="red" />
+			<ATTRIBUTE NAME="above" VALUE="q4" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="bottom" />
+		</ENTITY>
+
+		<ENTITY ID="q3" FUNCTION="distractor-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="red" />
+			<ATTRIBUTE NAME="left" VALUE="q4" />
+			<ATTRIBUTE NAME="right" VALUE="c2" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="bottom" />
+		</ENTITY>
+
+		<ENTITY ID="q4" FUNCTION="distractor-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="red" />
+			<ATTRIBUTE NAME="below" VALUE="q2" />
+			<ATTRIBUTE NAME="right" VALUE="q3" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="bottom" />
+		</ENTITY>
+
+		<ENTITY ID="c1" FUNCTION="target-other">
+			<ATTRIBUTE NAME="type" VALUE="circle" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="left" VALUE="q1" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="c2" FUNCTION="distractor-other">
+			<ATTRIBUTE NAME="type" VALUE="circle" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="left" VALUE="q3" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="bottom" />
+		</ENTITY>
+
+	</CONTEXT>
+
+
+
+
+
+
+
+
+
+
+	<CONTEXT ID="abs5" IMAGE="abs5.png">
+
+		<ENTITY ID="e1" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="hpos" VALUE="centre" />
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+		</ENTITY>
+
+		<ENTITY ID="e2" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="e3" FUNCTION="target">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="left" VALUE="q6" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="e4" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="hpos" VALUE="centre" />
+			<ATTRIBUTE NAME="vpos" VALUE="bottom" />
+		</ENTITY>
+
+		<ENTITY ID="q1" FUNCTION="distractor-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="red" />
+			<ATTRIBUTE NAME="above" VALUE="q3" />
+			<ATTRIBUTE NAME="left" VALUE="q2" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+		</ENTITY>
+
+		<ENTITY ID="q2" FUNCTION="distractor-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="red" />
+			<ATTRIBUTE NAME="above" VALUE="q4" />
+			<ATTRIBUTE NAME="left" VALUE="c1" />
+			<ATTRIBUTE NAME="right" VALUE="q1" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+		</ENTITY>
+
+		<ENTITY ID="q3" FUNCTION="distractor-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="red" />
+			<ATTRIBUTE NAME="left" VALUE="q4" />
+			<ATTRIBUTE NAME="below" VALUE="q1" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+		</ENTITY>
+
+		<ENTITY ID="q4" FUNCTION="distractor-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="red" />
+			<ATTRIBUTE NAME="below" VALUE="q2" />
+			<ATTRIBUTE NAME="right" VALUE="q3" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+		</ENTITY>
+
+		<ENTITY ID="q5" FUNCTION="distractor-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="red" />
+			<ATTRIBUTE NAME="below" VALUE="q3" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+		</ENTITY>
+
+		<ENTITY ID="q6" FUNCTION="target-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="left" VALUE="c2" />
+			<ATTRIBUTE NAME="right" VALUE="e3" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="c1" FUNCTION="distractor-other">
+			<ATTRIBUTE NAME="type" VALUE="circle" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="right" VALUE="q2" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+		</ENTITY>
+
+		<ENTITY ID="c2" FUNCTION="target-other">
+			<ATTRIBUTE NAME="type" VALUE="circle" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="right" VALUE="q6" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+	</CONTEXT>
+
+
+
+	<CONTEXT ID="proj1" IMAGE="proj1.png">
+
+		<ENTITY ID="e1" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="hpos" VALUE="centre" />
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+		</ENTITY>
+
+		<ENTITY ID="e2" FUNCTION="target">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="right" VALUE="q1" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="e3" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="e4" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="hpos" VALUE="centre" />
+			<ATTRIBUTE NAME="vpos" VALUE="bottom" />
+		</ENTITY>
+
+		<ENTITY ID="q1" FUNCTION="target-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="right" VALUE="c1" />
+			<ATTRIBUTE NAME="left" VALUE="e2" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="q2" FUNCTION="distractor-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="right" VALUE="c2" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="bottom" />
+		</ENTITY>
+
+		<ENTITY ID="c1" FUNCTION="target-other">
+			<ATTRIBUTE NAME="type" VALUE="circle" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="left" VALUE="q1" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="c2" FUNCTION="distractor-other">
+			<ATTRIBUTE NAME="type" VALUE="circle" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="left" VALUE="q2" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="bottom" />
+		</ENTITY>
+
+	</CONTEXT>
+
+
+
+
+
+	<CONTEXT ID="proj3" IMAGE="proj3.png">
+
+		<ENTITY ID="e1" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="hpos" VALUE="centre" />
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+		</ENTITY>
+
+		<ENTITY ID="e2" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="e3" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="hpos" VALUE="centre" />
+			<ATTRIBUTE NAME="vpos" VALUE="bottom" />
+		</ENTITY>
+
+		<ENTITY ID="e4" FUNCTION="target">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="left" VALUE="q4" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+
+		<ENTITY ID="q1" FUNCTION="distractor-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="above" VALUE="q3" />
+			<ATTRIBUTE NAME="left" VALUE="q2" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+		</ENTITY>
+
+		<ENTITY ID="q2" FUNCTION="distractor-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="left" VALUE="c1" />
+			<ATTRIBUTE NAME="right" VALUE="q1" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+		</ENTITY>
+
+		<ENTITY ID="q3" FUNCTION="distractor-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="below" VALUE="q1" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+		</ENTITY>
+
+		<ENTITY ID="q4" FUNCTION="target-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="left" VALUE="c2" />
+			<ATTRIBUTE NAME="right" VALUE="e4" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="c1" FUNCTION="distractor-other">
+			<ATTRIBUTE NAME="type" VALUE="circle" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="right" VALUE="q2" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+		</ENTITY>
+
+		<ENTITY ID="c2" FUNCTION="target-other">
+			<ATTRIBUTE NAME="type" VALUE="circle" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="right" VALUE="q4" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+	</CONTEXT>
+
+
+
+
+
+
+
+
+
+
+	<CONTEXT ID="proj5" IMAGE="proj5.png">
+
+		<ENTITY ID="e1" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="hpos" VALUE="centre" />
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+		</ENTITY>
+
+		<ENTITY ID="e2" FUNCTION="target">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="left" VALUE="q6" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="e3" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="e4" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="hpos" VALUE="centre" />
+			<ATTRIBUTE NAME="vpos" VALUE="bottom" />
+		</ENTITY>
+
+
+		<ENTITY ID="q1" FUNCTION="distractor-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="above" VALUE="q2" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="q2" FUNCTION="distractor-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="left" VALUE="q3" />
+			<ATTRIBUTE NAME="below" VALUE="q1" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="q3" FUNCTION="distractor-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="right" VALUE="q2" />
+			<ATTRIBUTE NAME="above" VALUE="q5" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="q4" FUNCTION="distractor-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="left" VALUE="q5" />
+			<ATTRIBUTE NAME="below" VALUE="q2" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="bottom" />
+		</ENTITY>
+
+		<ENTITY ID="q5" FUNCTION="distractor-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="right" VALUE="q4" />
+			<ATTRIBUTE NAME="below" VALUE="q3" />
+			<ATTRIBUTE NAME="left" VALUE="c1" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="bottom" />
+		</ENTITY>
+
+		<ENTITY ID="q6" FUNCTION="target-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="left" VALUE="c2" />
+			<ATTRIBUTE NAME="right" VALUE="e2" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="c1" FUNCTION="distractor-other">
+			<ATTRIBUTE NAME="type" VALUE="circle" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="right" VALUE="q5" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="bottom" />
+		</ENTITY>
+
+		<ENTITY ID="c2" FUNCTION="target-other">
+			<ATTRIBUTE NAME="type" VALUE="circle" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="right" VALUE="q6" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+	</CONTEXT>
+
+
+
+
+
+
+
+
+
+
+
+
+	<CONTEXT ID="fill1" IMAGE="filler1.png">
+
+		<ENTITY ID="e1" FUNCTION="target">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="right" VALUE="q1" />
+			<ATTRIBUTE NAME="left" VALUE="q2" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="e2" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="right" VALUE="q2" />
+			<ATTRIBUTE NAME="others" VALUE="red" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="q1" FUNCTION="target-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="right" VALUE="c3" />
+			<ATTRIBUTE NAME="left" VALUE="e1" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="q2" FUNCTION="distractor-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="left" VALUE="e2" />
+			<ATTRIBUTE NAME="below" VALUE="c2" />
+			<ATTRIBUTE NAME="right" VALUE="e1" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="c1" FUNCTION="distractor-other">
+			<ATTRIBUTE NAME="type" VALUE="circle" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="hpos" VALUE="centre" />
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+		</ENTITY>
+
+		<ENTITY ID="c2" FUNCTION="distractor-other">
+			<ATTRIBUTE NAME="type" VALUE="circle" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="above" VALUE="q2" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="c3" FUNCTION="target-other">
+			<ATTRIBUTE NAME="type" VALUE="circle" />
+			<ATTRIBUTE NAME="others" VALUE="red" />
+			<ATTRIBUTE NAME="left" VALUE="q1" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+	</CONTEXT>
+
+
+
+
+
+
+
+
+
+
+
+
+	<CONTEXT ID="fill2" IMAGE="filler2.png">
+
+		<ENTITY ID="e1" FUNCTION="target">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="right" VALUE="q3" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="e2" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="right" VALUE="q2" />
+			<ATTRIBUTE NAME="others" VALUE="red" />
+			<ATTRIBUTE NAME="hpos" VALUE="centre" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="q1" FUNCTION="distractor-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="right" VALUE="e1" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="q2" FUNCTION="distractor-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="left" VALUE="e2" />
+			<ATTRIBUTE NAME="hpos" VALUE="centre" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="q3" FUNCTION="target-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="red" />
+			<ATTRIBUTE NAME="right" VALUE="c1" />
+			<ATTRIBUTE NAME="left" VALUE="e1" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>	
+
+		<ENTITY ID="c1" FUNCTION="target-other">
+			<ATTRIBUTE NAME="type" VALUE="circle" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="left" VALUE="q3" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="c2" FUNCTION="distractor-other">
+			<ATTRIBUTE NAME="type" VALUE="circle" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="bottom" />
+		</ENTITY>
+
+	</CONTEXT>
+
+
+
+
+
+
+
+
+
+
+
+
+	<CONTEXT ID="fill3" IMAGE="filler3.png">
+
+		<ENTITY ID="e1" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="above" VALUE="c1" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+		</ENTITY>
+
+		<ENTITY ID="e2" FUNCTION="target">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="left" VALUE="q6" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="e3" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="left" VALUE="q5" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="hpos" VALUE="centre" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="e4" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="right" VALUE="q5" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="e5" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="below" VALUE="q3" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="bottom" />
+		</ENTITY>
+
+		<ENTITY ID="e6" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="above" VALUE="c2" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="bottom" />
+		</ENTITY>
+
+		<ENTITY ID="q1" FUNCTION="distractor-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="red" />
+			<ATTRIBUTE NAME="left" VALUE="q2" />
+			<ATTRIBUTE NAME="above" VALUE="q3" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+		</ENTITY>
+
+		<ENTITY ID="q2" FUNCTION="distractor-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="red" />
+			<ATTRIBUTE NAME="right" VALUE="q1" />
+			<ATTRIBUTE NAME="hpos" VALUE="centre" />
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+		</ENTITY>
+
+		<ENTITY ID="q3" FUNCTION="distractor-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="red" />
+			<ATTRIBUTE NAME="below" VALUE="q1" />
+			<ATTRIBUTE NAME="left" VALUE="q4" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+		</ENTITY>	
+
+		<ENTITY ID="q4" FUNCTION="distractor-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="red" />
+			<ATTRIBUTE NAME="right" VALUE="q3" />
+			<ATTRIBUTE NAME="left" VALUE="e2" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+		</ENTITY>	
+
+		<ENTITY ID="q5" FUNCTION="distractor-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="red" />
+			<ATTRIBUTE NAME="right" VALUE="e3" />
+			<ATTRIBUTE NAME="hpos" VALUE="centre" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>	
+
+		<ENTITY ID="q6" FUNCTION="target-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="right" VALUE="e2" />
+			<ATTRIBUTE NAME="left" VALUE="c1" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>	
+
+		<ENTITY ID="c1" FUNCTION="target-other">
+			<ATTRIBUTE NAME="type" VALUE="circle" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="right" VALUE="q6" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="c2" FUNCTION="distractor-other">
+			<ATTRIBUTE NAME="type" VALUE="circle" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="below" VALUE="e6" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="bottom" />
+		</ENTITY>
+
+	</CONTEXT>
+
+
+
+
+
+
+
+
+
+
+
+
+	<CONTEXT ID="fill4" IMAGE="filler4.png">
+
+		<ENTITY ID="e1" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+		</ENTITY>
+
+		<ENTITY ID="e2" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="below" VALUE="c1" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+		</ENTITY>
+
+		<ENTITY ID="e3" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+		</ENTITY>
+
+		<ENTITY ID="e4" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="left" VALUE="q2" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="e5" FUNCTION="target">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="left" VALUE="q1" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="e6" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="below" VALUE="c2" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="bottom" />
+		</ENTITY>
+
+		<ENTITY ID="q1" FUNCTION="target-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="right" VALUE="e5" />
+			<ATTRIBUTE NAME="left" VALUE="c2" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="q2" FUNCTION="distractor-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="red" />
+			<ATTRIBUTE NAME="right" VALUE="e4" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="c1" FUNCTION="distractor-other">
+			<ATTRIBUTE NAME="type" VALUE="circle" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="above" VALUE="e2" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+		</ENTITY>
+
+		<ENTITY ID="c2" FUNCTION="target-other">
+			<ATTRIBUTE NAME="type" VALUE="circle" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="right" VALUE="q1" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+	</CONTEXT>
+
+
+
+
+
+
+
+
+
+
+
+
+	<CONTEXT ID="fill5" IMAGE="filler5.png">
+
+		<ENTITY ID="e1" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="below" VALUE="c1" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+		</ENTITY>
+
+		<ENTITY ID="e2" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+		</ENTITY>
+
+		<ENTITY ID="e3" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="e4" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="right" VALUE="q1" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="e5" FUNCTION="target">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="right" VALUE="q2" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="e6" FUNCTION="distractor">
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="below" VALUE="c2" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="bottom" />
+		</ENTITY>
+
+		<ENTITY ID="q1" FUNCTION="distractor-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="right" VALUE="c3" />
+			<ATTRIBUTE NAME="left" VALUE="e4" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="q2" FUNCTION="target-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="red" />
+			<ATTRIBUTE NAME="right" VALUE="c2" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="q3" FUNCTION="distractor-landmark">
+			<ATTRIBUTE NAME="type" VALUE="box" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="c1" FUNCTION="distractor-other">
+			<ATTRIBUTE NAME="type" VALUE="circle" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="above" VALUE="e1" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+		</ENTITY>
+
+		<ENTITY ID="c2" FUNCTION="target-other">
+			<ATTRIBUTE NAME="type" VALUE="circle" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="left" VALUE="q2" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+		<ENTITY ID="c3" FUNCTION="distractor-other">
+			<ATTRIBUTE NAME="type" VALUE="circle" />
+			<ATTRIBUTE NAME="others" VALUE="red" />
+			<ATTRIBUTE NAME="left" VALUE="q1" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="vpos" VALUE="centre" />
+		</ENTITY>
+
+	</CONTEXT>
+</DOMAIN>

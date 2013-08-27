@@ -3,7 +3,7 @@ Created on 23/07/2013
 
 @author: thiagocastroferreira
 '''
-
+# Formata o mapa anotado do experimento Zoom (Primeira Imagem)
 def parseDominio():
     propriedades = []
     mapa = {}
@@ -166,9 +166,10 @@ def test():
                     newElements = newElements + element + ";"
             newDoc = newDoc + newElements
     
-    file = open("anotacoes_new.csv", "w")
-    doc = file.write(newDoc)
-    file.close()
+#     file = open("anotacoes_new.csv", "w")
+#     doc = file.write(newDoc)
+#     file.close()
+    return newDoc
 
 def parseAnnotation():
     propriedades = []

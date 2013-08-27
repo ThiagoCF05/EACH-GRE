@@ -33,7 +33,7 @@ class IncrementalAlgorithm(object):
 				
 				if len(self.distractors) == 1:
 					return self.description
-		if len(self.distractors) > 0:
+		if len(self.distractors) > 1:
 			print """Nao foi possivel definir uma referencia para o objeto"""
 
 
