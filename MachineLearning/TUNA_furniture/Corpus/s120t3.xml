@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<!DOCTYPE TRIAL SYSTEM "furniture.dtd">
+<TRIAL CARDINALITY="1" CONDITION="-LOC" DOMAIN="furniture" ID="s120t3"
+	SIMILARITY="similar">
+	<DOMAIN>
+		<ENTITY ID="48" IMAGE="sofaRightRedLarge.gif" TYPE="target">
+			<ATTRIBUTE NAME="colour" TYPE="literal" VALUE="red" />
+			<ATTRIBUTE NAME="orientation" TYPE="literal" VALUE="right" />
+			<ATTRIBUTE NAME="type" TYPE="literal" VALUE="sofa" />
+			<ATTRIBUTE NAME="size" TYPE="literal" VALUE="large" />
+			<ATTRIBUTE NAME="x-dimension" TYPE="gradable" VALUE="3" />
+			<ATTRIBUTE NAME="y-dimension" TYPE="gradable" VALUE="2" />
+		</ENTITY>
+		<ENTITY ID="112" IMAGE="sofaRightRedSmall.gif"
+			TYPE="distractor">
+			<ATTRIBUTE NAME="colour" TYPE="literal" VALUE="red" />
+			<ATTRIBUTE NAME="orientation" TYPE="literal" VALUE="right" />
+			<ATTRIBUTE NAME="type" TYPE="literal" VALUE="sofa" />
+			<ATTRIBUTE NAME="size" TYPE="literal" VALUE="small" />
+			<ATTRIBUTE NAME="x-dimension" TYPE="gradable" VALUE="2" />
+			<ATTRIBUTE NAME="y-dimension" TYPE="gradable" VALUE="1" />
+		</ENTITY>
+		<ENTITY ID="109" IMAGE="sofaRightBlueSmall.gif"
+			TYPE="distractor">
+			<ATTRIBUTE NAME="colour" TYPE="literal" VALUE="blue" />
+			<ATTRIBUTE NAME="orientation" TYPE="literal" VALUE="right" />
+			<ATTRIBUTE NAME="type" TYPE="literal" VALUE="sofa" />
+			<ATTRIBUTE NAME="size" TYPE="literal" VALUE="small" />
+			<ATTRIBUTE NAME="x-dimension" TYPE="gradable" VALUE="5" />
+			<ATTRIBUTE NAME="y-dimension" TYPE="gradable" VALUE="3" />
+		</ENTITY>
+		<ENTITY ID="98" IMAGE="sofaBackGreenSmall.gif"
+			TYPE="distractor">
+			<ATTRIBUTE NAME="colour" TYPE="literal" VALUE="green" />
+			<ATTRIBUTE NAME="orientation" TYPE="literal" VALUE="back" />
+			<ATTRIBUTE NAME="type" TYPE="literal" VALUE="sofa" />
+			<ATTRIBUTE NAME="size" TYPE="literal" VALUE="small" />
+			<ATTRIBUTE NAME="x-dimension" TYPE="gradable" VALUE="4" />
+			<ATTRIBUTE NAME="y-dimension" TYPE="gradable" VALUE="3" />
+		</ENTITY>
+		<ENTITY ID="96" IMAGE="deskRightRedSmall.gif"
+			TYPE="distractor">
+			<ATTRIBUTE NAME="colour" TYPE="literal" VALUE="red" />
+			<ATTRIBUTE NAME="orientation" TYPE="literal" VALUE="right" />
+			<ATTRIBUTE NAME="type" TYPE="literal" VALUE="desk" />
+			<ATTRIBUTE NAME="size" TYPE="literal" VALUE="small" />
+			<ATTRIBUTE NAME="x-dimension" TYPE="gradable" VALUE="5" />
+			<ATTRIBUTE NAME="y-dimension" TYPE="gradable" VALUE="2" />
+		</ENTITY>
+		<ENTITY ID="93" IMAGE="deskRightBlueSmall.gif"
+			TYPE="distractor">
+			<ATTRIBUTE NAME="colour" TYPE="literal" VALUE="blue" />
+			<ATTRIBUTE NAME="orientation" TYPE="literal" VALUE="right" />
+			<ATTRIBUTE NAME="type" TYPE="literal" VALUE="desk" />
+			<ATTRIBUTE NAME="size" TYPE="literal" VALUE="small" />
+			<ATTRIBUTE NAME="x-dimension" TYPE="gradable" VALUE="4" />
+			<ATTRIBUTE NAME="y-dimension" TYPE="gradable" VALUE="1" />
+		</ENTITY>
+		<ENTITY ID="82" IMAGE="deskBackGreenSmall.gif"
+			TYPE="distractor">
+			<ATTRIBUTE NAME="colour" TYPE="literal" VALUE="green" />
+			<ATTRIBUTE NAME="orientation" TYPE="literal" VALUE="back" />
+			<ATTRIBUTE NAME="type" TYPE="literal" VALUE="desk" />
+			<ATTRIBUTE NAME="size" TYPE="literal" VALUE="small" />
+			<ATTRIBUTE NAME="x-dimension" TYPE="gradable" VALUE="1" />
+			<ATTRIBUTE NAME="y-dimension" TYPE="gradable" VALUE="2" />
+		</ENTITY>
+	</DOMAIN>
+	<STRING-DESCRIPTION>
+		the red loveseat in the center is in red
+	</STRING-DESCRIPTION>
+	<DESCRIPTION NUM="singular">
+		<DET ID="48" VALUE="definite">the</DET>
+		<ATTRIBUTE ID="a1" NAME="colour" VALUE="red">red</ATTRIBUTE>
+		<ATTRIBUTE ID="a2" NAME="type" VALUE="sofa">loveseat</ATTRIBUTE>
+		<META-ATTRIBUTE ID="a223" NAME="location" VALUE="middle">
+			<ATTRIBUTE ID="a3" NAME="y-dimension" VALUE="2" />
+			<ATTRIBUTE ID="a4" NAME="x-dimension" VALUE="3" />
+			in the center
+		</META-ATTRIBUTE>
+		is in red
+	</DESCRIPTION>
+	<ATTRIBUTE-SET>
+		<ATTRIBUTE ID="a4" NAME="x-dimension" VALUE="3" />
+		<ATTRIBUTE ID="a3" NAME="y-dimension" VALUE="2" />
+		<ATTRIBUTE ID="a2" NAME="type" VALUE="sofa"></ATTRIBUTE>
+		<ATTRIBUTE ID="a1" NAME="colour" VALUE="red"></ATTRIBUTE>
+	</ATTRIBUTE-SET>
+</TRIAL>

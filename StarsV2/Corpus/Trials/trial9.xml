@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<TRIAL ID="9" SPEAKER="9" AGE="21" GENDER="m">
+
+  <CONTEXT ID="abs1">
+    <ATTRIBUTE-SET TARGET="e2" LANDMARK="q2" STRING=" que fica à esquerda do quadrado não colorido de vermelho " LENGTH="6" OVERSPEC="3">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="left" VALUE="q2" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="abs3">
+    <ATTRIBUTE-SET TARGET="e2" LANDMARK="q1" STRING=" que está ao lado do quadrado não colorido de vermelho " LENGTH="6" OVERSPEC="3">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="near" VALUE="q1" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="abs5">
+    <ATTRIBUTE-SET TARGET="e3" LANDMARK="q6" STRING=" que fica à esquerda do quadrado que não é vermelho" LENGTH="6" OVERSPEC="3">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="left" VALUE="q6" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="fill1">
+    <ATTRIBUTE-SET TARGET="e1" STRING=" estrela não vermelha " LENGTH="4" OVERSPEC="0">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="colour" VALUE="white" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="fill2">
+    <ATTRIBUTE-SET TARGET="e1" LANDMARK="q3" STRING=" que fica ao lado do quadrado vermelho " LENGTH="6" OVERSPEC="4">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="red" />
+      <ATTRIBUTE NAME="near" VALUE="q3" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="fill3">
+    <ATTRIBUTE-SET TARGET="e2" LANDMARK="q6" STRING=" que fica à esquerda do quadrado não colorido de vermelho " LENGTH="6" OVERSPEC="1">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="left" VALUE="q6" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="fill4">
+    <ATTRIBUTE-SET TARGET="e5" LANDMARK="q1" STRING=" que fica à esquerda do quadrado não colorido de vermelho " LENGTH="6" OVERSPEC="1">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="left" VALUE="q1" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="fill5">
+    <ATTRIBUTE-SET TARGET="e5" LANDMARK="q2" STRING=" que está à  direita do primeiro quadrado, da esquerda pra direita" LENGTH="5" OVERSPEC="0">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="right" VALUE="q2" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="proj1">
+    <ATTRIBUTE-SET TARGET="e2" LANDMARK="q1" STRING=" que fica à direita do quadrado da parte superior do desenho " LENGTH="6" OVERSPEC="3">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="vpos" VALUE="centre" />
+      <ATTRIBUTE NAME="right" VALUE="q1" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="proj3">
+    <ATTRIBUTE-SET TARGET="e4" STRING=" terceira, dà esquerda prà direita " LENGTH="3" OVERSPEC="0">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="proj5">
+    <ATTRIBUTE-SET TARGET="e2" STRING=" terceira, dà esquerda prà direita " LENGTH="3" OVERSPEC="0">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+</TRIAL>

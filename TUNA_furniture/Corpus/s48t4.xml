@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<!DOCTYPE TRIAL SYSTEM "furniture.dtd">
+<TRIAL CARDINALITY="1" CONDITION="-LOC" DOMAIN="furniture" ID="s48t4"
+	SIMILARITY="similar">
+	<DOMAIN>
+		<ENTITY ID="121" IMAGE="fanLeftBlueSmall.gif" TYPE="target">
+			<ATTRIBUTE NAME="colour" TYPE="literal" VALUE="blue" />
+			<ATTRIBUTE NAME="orientation" TYPE="literal" VALUE="left" />
+			<ATTRIBUTE NAME="type" TYPE="literal" VALUE="fan" />
+			<ATTRIBUTE NAME="size" TYPE="literal" VALUE="small" />
+			<ATTRIBUTE NAME="x-dimension" TYPE="gradable" VALUE="1" />
+			<ATTRIBUTE NAME="y-dimension" TYPE="gradable" VALUE="1" />
+		</ENTITY>
+		<ENTITY ID="122" IMAGE="fanLeftGreenSmall.gif"
+			TYPE="distractor">
+			<ATTRIBUTE NAME="colour" TYPE="literal" VALUE="green" />
+			<ATTRIBUTE NAME="orientation" TYPE="literal" VALUE="left" />
+			<ATTRIBUTE NAME="type" TYPE="literal" VALUE="fan" />
+			<ATTRIBUTE NAME="size" TYPE="literal" VALUE="small" />
+			<ATTRIBUTE NAME="x-dimension" TYPE="gradable" VALUE="3" />
+			<ATTRIBUTE NAME="y-dimension" TYPE="gradable" VALUE="1" />
+		</ENTITY>
+		<ENTITY ID="57" IMAGE="fanLeftBlueLarge.gif"
+			TYPE="distractor">
+			<ATTRIBUTE NAME="colour" TYPE="literal" VALUE="blue" />
+			<ATTRIBUTE NAME="orientation" TYPE="literal" VALUE="left" />
+			<ATTRIBUTE NAME="type" TYPE="literal" VALUE="fan" />
+			<ATTRIBUTE NAME="size" TYPE="literal" VALUE="large" />
+			<ATTRIBUTE NAME="x-dimension" TYPE="gradable" VALUE="1" />
+			<ATTRIBUTE NAME="y-dimension" TYPE="gradable" VALUE="3" />
+		</ENTITY>
+		<ENTITY ID="52" IMAGE="fanBackRedLarge.gif" TYPE="distractor">
+			<ATTRIBUTE NAME="colour" TYPE="literal" VALUE="red" />
+			<ATTRIBUTE NAME="orientation" TYPE="literal" VALUE="back" />
+			<ATTRIBUTE NAME="type" TYPE="literal" VALUE="fan" />
+			<ATTRIBUTE NAME="size" TYPE="literal" VALUE="large" />
+			<ATTRIBUTE NAME="x-dimension" TYPE="gradable" VALUE="5" />
+			<ATTRIBUTE NAME="y-dimension" TYPE="gradable" VALUE="3" />
+		</ENTITY>
+		<ENTITY ID="106" IMAGE="sofaLeftGreenSmall.gif"
+			TYPE="distractor">
+			<ATTRIBUTE NAME="colour" TYPE="literal" VALUE="green" />
+			<ATTRIBUTE NAME="orientation" TYPE="literal" VALUE="left" />
+			<ATTRIBUTE NAME="type" TYPE="literal" VALUE="sofa" />
+			<ATTRIBUTE NAME="size" TYPE="literal" VALUE="small" />
+			<ATTRIBUTE NAME="x-dimension" TYPE="gradable" VALUE="5" />
+			<ATTRIBUTE NAME="y-dimension" TYPE="gradable" VALUE="1" />
+		</ENTITY>
+		<ENTITY ID="41" IMAGE="sofaLeftBlueLarge.gif"
+			TYPE="distractor">
+			<ATTRIBUTE NAME="colour" TYPE="literal" VALUE="blue" />
+			<ATTRIBUTE NAME="orientation" TYPE="literal" VALUE="left" />
+			<ATTRIBUTE NAME="type" TYPE="literal" VALUE="sofa" />
+			<ATTRIBUTE NAME="size" TYPE="literal" VALUE="large" />
+			<ATTRIBUTE NAME="x-dimension" TYPE="gradable" VALUE="2" />
+			<ATTRIBUTE NAME="y-dimension" TYPE="gradable" VALUE="1" />
+		</ENTITY>
+		<ENTITY ID="36" IMAGE="sofaBackRedLarge.gif"
+			TYPE="distractor">
+			<ATTRIBUTE NAME="colour" TYPE="literal" VALUE="red" />
+			<ATTRIBUTE NAME="orientation" TYPE="literal" VALUE="back" />
+			<ATTRIBUTE NAME="type" TYPE="literal" VALUE="sofa" />
+			<ATTRIBUTE NAME="size" TYPE="literal" VALUE="large" />
+			<ATTRIBUTE NAME="x-dimension" TYPE="gradable" VALUE="2" />
+			<ATTRIBUTE NAME="y-dimension" TYPE="gradable" VALUE="3" />
+		</ENTITY>
+	</DOMAIN>
+	<STRING-DESCRIPTION>the top blue fan</STRING-DESCRIPTION>
+	<DESCRIPTION NUM="singular">
+		<DET ID="5785" VALUE="definite">the</DET>
+		<META-ATTRIBUTE ID="a218" NAME="location" VALUE="top">
+			<ATTRIBUTE ID="a1" NAME="y-dimension" VALUE="1" />
+			top
+		</META-ATTRIBUTE>
+		<ATTRIBUTE ID="a2" NAME="colour" VALUE="blue">blue</ATTRIBUTE>
+		<ATTRIBUTE ID="a3" NAME="type" VALUE="fan">fan</ATTRIBUTE>
+	</DESCRIPTION>
+	<ATTRIBUTE-SET>
+		<ATTRIBUTE ID="a3" NAME="type" VALUE="fan"></ATTRIBUTE>
+		<ATTRIBUTE ID="a2" NAME="colour" VALUE="blue"></ATTRIBUTE>
+		<ATTRIBUTE ID="a1" NAME="y-dimension" VALUE="1" />
+	</ATTRIBUTE-SET>
+</TRIAL>

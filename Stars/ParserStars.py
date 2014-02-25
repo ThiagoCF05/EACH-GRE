@@ -51,8 +51,11 @@ def parseAnnotation():
                     element = element.split("-")
                     for value in element:
                         if value != "":
-                            descricao["descricao"][target][propriedades[j]] = []
-                            descricao["descricao"][target][propriedades[j]].append(value)
+                            if propriedades[j] in descricao["descricao"][target].keys():
+                                descricao["descricao"][target][propriedades[j]].append(value)
+                            else:
+                                descricao["descricao"][target][propriedades[j]] = []
+                                descricao["descricao"][target][propriedades[j]].append(value)
                             nroLandmarks = nroLandmarks + 1
                             type = []
                             others = []
@@ -83,6 +86,7 @@ def parseAnnotation():
 
 # Formata o dominio do experimento Stars em xml
 def parseDominio():
+    atributos = ["type", "others", "hpos", "vpos", "next", "left", "right", "below", "above"]
     tree = ET.parse('dominio_stars.xml') 
     root = tree.getroot()
     dominios = {}
@@ -95,5 +99,12 @@ def parseDominio():
                 dominios[context_id][entity_id] = {}
                 dominios[context_id][entity_id]["function"] = entity.attrib["FUNCTION"]
                 for attribute in entity:
-                    dominios[context_id][entity_id][attribute.attrib["NAME"]] = attribute.attrib["VALUE"]
+                    if attribute.attrib["NAME"] in dominios[context_id][entity_id].keys():
+                        dominios[context_id][entity_id][attribute.attrib["NAME"]].append(attribute.attrib["VALUE"])
+                    else:
+                        dominios[context_id][entity_id][attribute.attrib["NAME"]] = []
+                        dominios[context_id][entity_id][attribute.attrib["NAME"]].append(attribute.attrib["VALUE"])
+                for atributo in atributos:
+                    if atributo not in dominios[context_id][entity_id].keys():
+                        dominios[context_id][entity_id][atributo] = []
     return dominios

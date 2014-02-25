@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+	<TRIAL ID="421" AGE="18" GENDER="m" DURATION="4">
+		<CONTEXT ID ="2" SEQ="2886" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="1"  SIZE2="0" WORD-STRING ="aqui ha peixe">
+			<ATTRIBUTE-SET1 TARGET.ID="cafe1">
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="3" SEQ="2887" STATUS="ok" AGREEMENT="no" ANNOTATOR="1"  SIZE1="3"  SIZE2="0" WORD-STRING ="farmacia internacional">
+			<ATTRIBUTE-SET1 TARGET.ID="drug3">
+				<ATTRIBUTE NAME="type" VALUE="drugstore" />
+				<ATTRIBUTE NAME="name" VALUE="other" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="6" SEQ="2889" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="6"  SIZE2="0" WORD-STRING ="igreja da rua do crucifixo">
+			<ATTRIBUTE-SET1 TARGET.ID="chur3">
+				<ATTRIBUTE NAME="type" VALUE="church" />
+				<ATTRIBUTE NAME="in" VALUE="str14" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str14" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua do crucifixo" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="9" SEQ="2888" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="3"  SIZE2="0" WORD-STRING ="farmacia cortez">
+			<ATTRIBUTE-SET1 TARGET.ID="drug4">
+				<ATTRIBUTE NAME="type" VALUE="drugstore" />
+				<ATTRIBUTE NAME="name" VALUE="cortez" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="10" SEQ="2890" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="2"  SIZE2="0" WORD-STRING ="taberna do chiado">
+			<ATTRIBUTE-SET1 TARGET.ID="rest5">
+				<ATTRIBUTE NAME="name" VALUE="taberna do chiado" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="11" SEQ="2894" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="2"  SIZE2="0" WORD-STRING ="kafeehaus">
+			<ATTRIBUTE-SET1 TARGET.ID="rest3">
+				<ATTRIBUTE NAME="name" VALUE="kaffeehaus" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="13" SEQ="2897" STATUS="ok" AGREEMENT="no" ANNOTATOR="2"  SIZE1="2"  SIZE2="0" WORD-STRING ="o sacramento">
+			<ATTRIBUTE-SET1 TARGET.ID="rest4">
+				<ATTRIBUTE NAME="name" VALUE="o sacramento" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="15" SEQ="2895" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="2"  SIZE2="0" WORD-STRING ="caioca da trindade">
+			<ATTRIBUTE-SET1 TARGET.ID="pub1">
+				<ATTRIBUTE NAME="name" VALUE="carioca da trindade" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="17" SEQ="2901" STATUS="ok" AGREEMENT="no" ANNOTATOR="2"  SIZE1="2"  SIZE2="0" WORD-STRING ="aqui ha peixe">
+			<ATTRIBUTE-SET1 TARGET.ID="rest1">
+				<ATTRIBUTE NAME="name" VALUE="aqui ha peixe" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="18" SEQ="2902" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="3"  SIZE2="0" WORD-STRING ="farmania internacional">
+			<ATTRIBUTE-SET1 TARGET.ID="drug2">
+				<ATTRIBUTE NAME="type" VALUE="drugstore" />
+				<ATTRIBUTE NAME="name" VALUE="internacional" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="20" SEQ="2900" STATUS="ok" AGREEMENT="no" ANNOTATOR="1"  SIZE1="2"  SIZE2="0" WORD-STRING ="io sacramento">
+			<ATTRIBUTE-SET1 TARGET.ID="rest4">
+				<ATTRIBUTE NAME="name" VALUE="o sacramento" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+</TRIAL>

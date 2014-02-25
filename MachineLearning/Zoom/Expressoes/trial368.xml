@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+	<TRIAL ID="368" AGE="23" GENDER="m" DURATION="13">
+		<CONTEXT ID ="1" SEQ="2274" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="2"  SIZE2="0" WORD-STRING ="Restaurante, se for barato, to dentro">
+			<ATTRIBUTE-SET1 TARGET.ID="rest3">
+				<ATTRIBUTE NAME="type" VALUE="restaurant" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="2" SEQ="2272" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="2"  SIZE2="0" WORD-STRING ="Bom se tem cafe, to dentro">
+			<ATTRIBUTE-SET1 TARGET.ID="cafe1">
+				<ATTRIBUTE NAME="type" VALUE="cafe" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="4" SEQ="2276" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="2"  SIZE2="0" WORD-STRING ="Ir na igreja rezar e fazer tudo errado">
+			<ATTRIBUTE-SET1 TARGET.ID="chur3">
+				<ATTRIBUTE NAME="type" VALUE="church" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="5" SEQ="2273" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="2"  SIZE2="0" WORD-STRING ="Normalmente nao vou a pubs, cade a livraria com cafe">
+			<ATTRIBUTE-SET1 TARGET.ID="pub1">
+				<ATTRIBUTE NAME="type" VALUE="pub" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="8" SEQ="2280" STATUS="ok" AGREEMENT="no" ANNOTATOR="2"  SIZE1="7"  SIZE2="11" WORD-STRING ="Tem duas farmacias na rua do ouro, uma farmacia internacional, opa devem atender bastante estrangeiro, e a outra sem nome, que fica perto do cruzamento com a rua da vitoria">
+			<ATTRIBUTE-SET1 TARGET.ID="drug2">
+				<ATTRIBUTE NAME="type" VALUE="drugstore" />
+				<ATTRIBUTE NAME="name" VALUE="internacional" />
+				<ATTRIBUTE NAME="in" VALUE="str11" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str11" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua do ouro" />
+			</ATTRIBUTE-SET1>
+			<ATTRIBUTE-SET2 TARGET.ID="drug3">
+				<ATTRIBUTE NAME="type" VALUE="drugstore" />
+				<ATTRIBUTE NAME="name" VALUE="unnamed" />
+				<ATTRIBUTE NAME="in" VALUE="str11" />
+				<ATTRIBUTE NAME="next-to" VALUE="str12" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str11" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua do ouro" />
+				<ATTRIBUTE NAME="d2.id" VALUE="str12" />
+				<ATTRIBUTE NAME="d2.type" VALUE="street" />
+				<ATTRIBUTE NAME="d2.name" VALUE="rua da vitoria" />
+			</ATTRIBUTE-SET2>
+		</CONTEXT>
+		<CONTEXT ID ="9" SEQ="2281" STATUS="ok" AGREEMENT="no" ANNOTATOR="2"  SIZE1="6"  SIZE2="3" WORD-STRING ="Agora da farmacia sem nome da rua do ouro e so seguir rua abaixo e virar a esquerda para a farmacia Cortez, tinha promocao la na semana passada, em algum sonho meu">
+			<ATTRIBUTE-SET1 TARGET.ID="drug3">
+				<ATTRIBUTE NAME="type" VALUE="drugstore" />
+				<ATTRIBUTE NAME="in" VALUE="str11" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str11" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua do ouro" />
+			</ATTRIBUTE-SET1>
+			<ATTRIBUTE-SET2 TARGET.ID="drug4">
+				<ATTRIBUTE NAME="type" VALUE="drugstore" />
+				<ATTRIBUTE NAME="name" VALUE="cortez" />
+			</ATTRIBUTE-SET2>
+		</CONTEXT>
+</TRIAL>

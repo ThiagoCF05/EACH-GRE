@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+	<TRIAL ID="1" AGE="27" GENDER="m" DURATION="13">
+		<CONTEXT ID ="1" SEQ="5" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="2"  SIZE2="0" WORD-STRING ="marcar um jantar romantico no restaurante">
+			<ATTRIBUTE-SET1 TARGET.ID="rest3">
+				<ATTRIBUTE NAME="type" VALUE="restaurant" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="2" SEQ="2" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="2"  SIZE2="0" WORD-STRING ="ou um cafe especial">
+			<ATTRIBUTE-SET1 TARGET.ID="cafe1">
+				<ATTRIBUTE NAME="type" VALUE="cafe" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="3" SEQ="4" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="2"  SIZE2="0" WORD-STRING ="e nao esquecer de passar na farmacia para comprar preservativos">
+			<ATTRIBUTE-SET1 TARGET.ID="drug3">
+				<ATTRIBUTE NAME="type" VALUE="drugstore" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="4" SEQ="3" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="2"  SIZE2="0" WORD-STRING ="passar na igreja para agradecer a Deus">
+			<ATTRIBUTE-SET1 TARGET.ID="chur3">
+				<ATTRIBUTE NAME="type" VALUE="church" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="5" SEQ="1" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="2"  SIZE2="0" WORD-STRING ="tomar uma cerveja com os amigos no pub">
+			<ATTRIBUTE-SET1 TARGET.ID="pub1">
+				<ATTRIBUTE NAME="type" VALUE="pub" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="6" SEQ="10" STATUS="edited" AGREEMENT="no" ANNOTATOR="1"  SIZE1="5"  SIZE2="0" WORD-STRING ="e proximo a rua do crucifixo">
+			<ATTRIBUTE-SET1 TARGET.ID="chur3">
+				<ATTRIBUTE NAME="next-to" VALUE="str14" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str14" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua do crucifixo" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="7" SEQ="7" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="0"  SIZE2="0" WORD-STRING ="um dia comer um saudavel peixe">
+		</CONTEXT>
+		<CONTEXT ID ="8" SEQ="9" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="3"  SIZE2="0" WORD-STRING ="pois e mais barata que a farmacia internacional">
+			<ATTRIBUTE-SET1 TARGET.ID="drug2">
+				<ATTRIBUTE NAME="type" VALUE="drugstore" />
+				<ATTRIBUTE NAME="name" VALUE="internacional" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="9" SEQ="8" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="3"  SIZE2="0" WORD-STRING ="indo a farmacia do cortez">
+			<ATTRIBUTE-SET1 TARGET.ID="drug4">
+				<ATTRIBUTE NAME="type" VALUE="drugstore" />
+				<ATTRIBUTE NAME="name" VALUE="cortez" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="10" SEQ="6" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="3"  SIZE2="3" WORD-STRING ="ou um lanchinho rapido na taberna ou no sacramento">
+			<ATTRIBUTE-SET1 TARGET.ID="rest5">
+				<ATTRIBUTE NAME="type" VALUE="restaurant" />
+				<ATTRIBUTE NAME="name" VALUE="taberna do chiado" />
+			</ATTRIBUTE-SET1>
+			<ATTRIBUTE-SET2 TARGET.ID="rest4">
+				<ATTRIBUTE NAME="type" VALUE="restaurant" />
+				<ATTRIBUTE NAME="name" VALUE="o sacramento" />
+			</ATTRIBUTE-SET2>
+		</CONTEXT>
+		<CONTEXT ID ="11" SEQ="15" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="2"  SIZE2="0" WORD-STRING ="comer um chucruts no kaffeehaus">
+			<ATTRIBUTE-SET1 TARGET.ID="rest3">
+				<ATTRIBUTE NAME="name" VALUE="kaffeehaus" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="12" SEQ="12" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="5"  SIZE2="0" WORD-STRING ="um cafe proximo ao largo de sao carlos">
+			<ATTRIBUTE-SET1 TARGET.ID="cafe1">
+				<ATTRIBUTE NAME="type" VALUE="cafe" />
+				<ATTRIBUTE NAME="next-to" VALUE="str26" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str26" />
+				<ATTRIBUTE NAME="d1.name" VALUE="largo de sao carlos" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="13" SEQ="14" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="0"  SIZE2="0" WORD-STRING ="sacramentar o chiado">
+		</CONTEXT>
+		<CONTEXT ID ="14" SEQ="13" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="2"  SIZE2="0" WORD-STRING ="voltar na igrejinha">
+			<ATTRIBUTE-SET1 TARGET.ID="chur3">
+				<ATTRIBUTE NAME="type" VALUE="church" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="15" SEQ="11" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="3"  SIZE2="0" WORD-STRING ="tomar um drink brasileiro no pub do carioca da trindade">
+			<ATTRIBUTE-SET1 TARGET.ID="pub1">
+				<ATTRIBUTE NAME="type" VALUE="pub" />
+				<ATTRIBUTE NAME="name" VALUE="carioca da trindade" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="16" SEQ="20" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="6"  SIZE2="0" WORD-STRING ="ir na igreja da calcada do sacramento">
+			<ATTRIBUTE-SET1 TARGET.ID="chur2">
+				<ATTRIBUTE NAME="type" VALUE="church" />
+				<ATTRIBUTE NAME="in" VALUE="str16" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str16" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="calcada do sacramento" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="17" SEQ="17" STATUS="edited" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="2"  SIZE2="0" WORD-STRING ="comer outro peixe no aqui ha peixe">
+			<ATTRIBUTE-SET1 TARGET.ID="rest1">
+				<ATTRIBUTE NAME="name" VALUE="aqui ha peixe" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="18" SEQ="19" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="3"  SIZE2="0" WORD-STRING ="pesquisar os valores na farmacia internacional">
+			<ATTRIBUTE-SET1 TARGET.ID="drug2">
+				<ATTRIBUTE NAME="type" VALUE="drugstore" />
+				<ATTRIBUTE NAME="name" VALUE="internacional" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="19" SEQ="18" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="3"  SIZE2="0" WORD-STRING ="comprar mais preservativos na farmacia cortez">
+			<ATTRIBUTE-SET1 TARGET.ID="drug4">
+				<ATTRIBUTE NAME="type" VALUE="drugstore" />
+				<ATTRIBUTE NAME="name" VALUE="cortez" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="20" SEQ="16" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="3"  SIZE2="0" WORD-STRING ="voltar no restaurante o sacramento">
+			<ATTRIBUTE-SET1 TARGET.ID="rest4">
+				<ATTRIBUTE NAME="type" VALUE="restaurant" />
+				<ATTRIBUTE NAME="name" VALUE="o sacramento" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+</TRIAL>

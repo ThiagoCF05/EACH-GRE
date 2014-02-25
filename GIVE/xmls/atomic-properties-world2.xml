@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ATOMIC-PROPERTIES>
+
+	<DOMAIN ID="tutorial-room" X="0.8" Y="3.11">
+
+		<ENTITY ID="dt1">
+			<ATTRIBUTE NAME="type" VALUE="door" />
+			<ATTRIBUTE NAME="x" VALUE="3" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="9.5" />
+			<ATTRIBUTE NAME="size" VALUE="10" />
+			<ATTRIBUTE NAME="orientation" VALUE="right" />
+		</ENTITY>
+
+	</DOMAIN>
+
+	<DOMAIN ID="connecting-room-1" X="1.1" Y="5.5">
+		<ENTITY ID="d7">
+			<ATTRIBUTE NAME="type" VALUE="door" />
+			<ATTRIBUTE NAME="x" VALUE="2.5" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="5" />
+			<ATTRIBUTE NAME="size" VALUE="10" />
+			<ATTRIBUTE NAME="orientation" VALUE="down" />
+		</ENTITY>
+
+		<ENTITY ID="d8">
+			<ATTRIBUTE NAME="type" VALUE="door" />
+			<ATTRIBUTE NAME="x" VALUE="5" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="2.5" />
+			<ATTRIBUTE NAME="size" VALUE="10" />
+			<ATTRIBUTE NAME="orientation" VALUE="right" />
+		</ENTITY>
+
+		<ENTITY ID="b19">
+			<ATTRIBUTE NAME="type" VALUE="button" />
+			<ATTRIBUTE NAME="color" VALUE="yellow" />
+			<ATTRIBUTE NAME="x" VALUE="2.9" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="1" />
+			<ATTRIBUTE NAME="size" VALUE="1" />
+			<ATTRIBUTE NAME="orientation" VALUE="up" />
+		</ENTITY>
+
+		<ENTITY ID="b20">
+			<ATTRIBUTE NAME="type" VALUE="button" />
+			<ATTRIBUTE NAME="color" VALUE="blue" />
+			<ATTRIBUTE NAME="x" VALUE="4.5" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="4" />
+			<ATTRIBUTE NAME="size" VALUE="1" />
+			<ATTRIBUTE NAME="orientation" VALUE="up" />
+		</ENTITY>
+
+		<ENTITY ID="p2">
+			<ATTRIBUTE NAME="type" VALUE="picture" />
+			<ATTRIBUTE NAME="x" VALUE="3.7" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="1" />
+			<ATTRIBUTE NAME="size" VALUE="5" />
+			<ATTRIBUTE NAME="orientation" VALUE="up" />
+		</ENTITY>
+
+	</DOMAIN>
+
+	<DOMAIN ID="room-4" X="0.5" Y="4.8">
+
+		<ENTITY ID="d7">
+			<ATTRIBUTE NAME="type" VALUE="door" />
+			<ATTRIBUTE NAME="x" VALUE="2.5" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="5" />
+			<ATTRIBUTE NAME="size" VALUE="10" />
+			<ATTRIBUTE NAME="orientation" VALUE="up" />
+		</ENTITY>
+
+		<ENTITY ID="a1">
+			<ATTRIBUTE NAME="type" VALUE="alarm" />
+			<ATTRIBUTE NAME="x" VALUE="2.5" />
+			<ATTRIBUTE NAME="y" VALUE="0" />
+			<ATTRIBUTE NAME="z" VALUE="7.5" />
+			<ATTRIBUTE NAME="size" VALUE="3" />
+		</ENTITY>
+
+		<ENTITY ID="p1">
+			<ATTRIBUTE NAME="type" VALUE="picture" />
+			<ATTRIBUTE NAME="x" VALUE="2.5" />
+			<ATTRIBUTE NAME="y" VALUE="0" />
+			<ATTRIBUTE NAME="z" VALUE="7.5" />
+			<ATTRIBUTE NAME="size" VALUE="5" />
+			<ATTRIBUTE NAME="orientation" VALUE="right" />
+		</ENTITY>
+
+		<ENTITY ID="s1">
+			<ATTRIBUTE NAME="type" VALUE="safe" />
+			<ATTRIBUTE NAME="x" VALUE="3" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="7.5" />
+			<ATTRIBUTE NAME="size" VALUE="5" />
+			<ATTRIBUTE NAME="orientation" VALUE="right" />
+		</ENTITY>
+
+		<ENTITY ID="t1">
+			<ATTRIBUTE NAME="type" VALUE="safe" />
+			<ATTRIBUTE NAME="x" VALUE="3" />
+			<ATTRIBUTE NAME="y" VALUE="1.1" />
+			<ATTRIBUTE NAME="z" VALUE="7.5" />
+			<ATTRIBUTE NAME="size" VALUE="3" />
+			<ATTRIBUTE NAME="orientation" VALUE="right" />
+		</ENTITY>
+
+	</DOMAIN>
+
+	<DOMAIN ID="room-1" polygon="3.4-3.7-5.7-5.8-6.8-6.6-7.6-7.8-9.8-9.4-3.4">
+
+		<ENTITY ID="d1">
+			<ATTRIBUTE NAME="type" VALUE="door" />
+			<ATTRIBUTE NAME="x" VALUE="7.5" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="4" />
+			<ATTRIBUTE NAME="size" VALUE="10" />
+			<ATTRIBUTE NAME="orientation" VALUE="up" />
+		</ENTITY>
+
+		<ENTITY ID="d2">
+			<ATTRIBUTE NAME="type" VALUE="door" />
+			<ATTRIBUTE NAME="x" VALUE="9" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="5.5" />
+			<ATTRIBUTE NAME="size" VALUE="10" />
+			<ATTRIBUTE NAME="orientation" VALUE="right" />
+		</ENTITY>
+
+		<ENTITY ID="d3">
+			<ATTRIBUTE NAME="type" VALUE="door" />
+			<ATTRIBUTE NAME="x" VALUE="5.5" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="8" />
+			<ATTRIBUTE NAME="size" VALUE="10" />
+			<ATTRIBUTE NAME="orientation" VALUE="down" />
+		</ENTITY>
+
+		<ENTITY ID="b1">
+			<ATTRIBUTE NAME="type" VALUE="button" />
+			<ATTRIBUTE NAME="color" VALUE="blue" />
+			<ATTRIBUTE NAME="x" VALUE="7.5" />
+			<ATTRIBUTE NAME="y" VALUE="0.9" />
+			<ATTRIBUTE NAME="z" VALUE="8" />
+			<ATTRIBUTE NAME="size" VALUE="1" />
+			<ATTRIBUTE NAME="orientation" VALUE="down" />
+		</ENTITY>
+
+		<ENTITY ID="b2">
+			<ATTRIBUTE NAME="type" VALUE="button" />
+			<ATTRIBUTE NAME="color" VALUE="green" />
+			<ATTRIBUTE NAME="x" VALUE="8.3" />
+			<ATTRIBUTE NAME="y" VALUE="0.9" />
+			<ATTRIBUTE NAME="z" VALUE="8" />
+			<ATTRIBUTE NAME="size" VALUE="1" />
+			<ATTRIBUTE NAME="orientation" VALUE="down" />
+		</ENTITY>
+
+		<ENTITY ID="b3">
+			<ATTRIBUTE NAME="type" VALUE="button" />
+			<ATTRIBUTE NAME="color" VALUE="blue" />
+			<ATTRIBUTE NAME="x" VALUE="9" />
+			<ATTRIBUTE NAME="y" VALUE="1.1" />
+			<ATTRIBUTE NAME="z" VALUE="7.1" />
+			<ATTRIBUTE NAME="size" VALUE="1" />
+			<ATTRIBUTE NAME="orientation" VALUE="right" />
+		</ENTITY>
+
+		<ENTITY ID="b4">
+			<ATTRIBUTE NAME="type" VALUE="button" />
+			<ATTRIBUTE NAME="color" VALUE="blue" />
+			<ATTRIBUTE NAME="x" VALUE="9" />
+			<ATTRIBUTE NAME="y" VALUE="1.1" />
+			<ATTRIBUTE NAME="z" VALUE="6.5" />
+			<ATTRIBUTE NAME="size" VALUE="1" />
+			<ATTRIBUTE NAME="orientation" VALUE="right" />
+		</ENTITY>
+
+	</DOMAIN>
+
+	<DOMAIN ID="room-2" X="3.8" Y="10.11" COLOR="red">
+
+		<ENTITY ID="d3">
+			<ATTRIBUTE NAME="type" VALUE="door" />
+			<ATTRIBUTE NAME="x" VALUE="5.5" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="8" />
+			<ATTRIBUTE NAME="size" VALUE="10" />
+			<ATTRIBUTE NAME="orientation" VALUE="up" />
+		</ENTITY>
+
+		<ENTITY ID="d4">
+			<ATTRIBUTE NAME="type" VALUE="door" />
+			<ATTRIBUTE NAME="x" VALUE="9.5" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="8" />
+			<ATTRIBUTE NAME="size" VALUE="10" />
+			<ATTRIBUTE NAME="orientation" VALUE="up" />
+		</ENTITY>
+
+		<ENTITY ID="d6">
+			<ATTRIBUTE NAME="type" VALUE="door" />
+			<ATTRIBUTE NAME="x" VALUE="10" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="10.5" />
+			<ATTRIBUTE NAME="size" VALUE="10" />
+			<ATTRIBUTE NAME="orientation" VALUE="right" />
+		</ENTITY>
+
+		<ENTITY ID="dt1">
+			<ATTRIBUTE NAME="type" VALUE="door" />
+			<ATTRIBUTE NAME="x" VALUE="3" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="9.5" />
+			<ATTRIBUTE NAME="size" VALUE="10" />
+			<ATTRIBUTE NAME="orientation" VALUE="left" />
+		</ENTITY>
+
+		<ENTITY ID="b5">
+			<ATTRIBUTE NAME="type" VALUE="button" />
+			<ATTRIBUTE NAME="color" VALUE="blue" />
+			<ATTRIBUTE NAME="x" VALUE="6.8" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="8" />
+			<ATTRIBUTE NAME="size" VALUE="1" />
+			<ATTRIBUTE NAME="orientation" VALUE="up" />
+		</ENTITY>
+
+		<ENTITY ID="lamp1">
+			<ATTRIBUTE NAME="type" VALUE="lamp" />
+			<ATTRIBUTE NAME="x" VALUE="7.5" />
+			<ATTRIBUTE NAME="y" VALUE="0" />
+			<ATTRIBUTE NAME="z" VALUE="8.7" />
+			<ATTRIBUTE NAME="size" VALUE="4" />
+			<ATTRIBUTE NAME="orientation" VALUE="up" />
+		</ENTITY>
+
+	</DOMAIN>
+
+	<DOMAIN ID="room-3" X="10.8" Y="14.11">
+
+		<ENTITY ID="d5">
+			<ATTRIBUTE NAME="type" VALUE="door" />
+			<ATTRIBUTE NAME="x" VALUE="10.5" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="8" />
+			<ATTRIBUTE NAME="size" VALUE="10" />
+			<ATTRIBUTE NAME="orientation" VALUE="up" />
+		</ENTITY>
+
+		<ENTITY ID="d6">
+			<ATTRIBUTE NAME="type" VALUE="door" />
+			<ATTRIBUTE NAME="x" VALUE="10" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="10.5" />
+			<ATTRIBUTE NAME="size" VALUE="10" />
+			<ATTRIBUTE NAME="orientation" VALUE="left" />
+		</ENTITY>
+
+		<ENTITY ID="d11">
+			<ATTRIBUTE NAME="type" VALUE="door" />
+			<ATTRIBUTE NAME="x" VALUE="12.5" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="8" />
+			<ATTRIBUTE NAME="size" VALUE="10" />
+			<ATTRIBUTE NAME="orientation" VALUE="up" />
+		</ENTITY>
+
+		<ENTITY ID="a2">
+			<ATTRIBUTE NAME="type" VALUE="alarm" />
+			<ATTRIBUTE NAME="x" VALUE="10.5" />
+			<ATTRIBUTE NAME="y" VALUE="0" />
+			<ATTRIBUTE NAME="z" VALUE="10.5" />
+			<ATTRIBUTE NAME="size" VALUE="3" />
+		</ENTITY>
+
+		<ENTITY ID="b6">
+			<ATTRIBUTE NAME="type" VALUE="button" />
+			<ATTRIBUTE NAME="color" VALUE="green" />
+			<ATTRIBUTE NAME="x" VALUE="11.3" />
+			<ATTRIBUTE NAME="y" VALUE="1.1" />
+			<ATTRIBUTE NAME="z" VALUE="8" />
+			<ATTRIBUTE NAME="size" VALUE="1" />
+			<ATTRIBUTE NAME="orientation" VALUE="up" />
+		</ENTITY>
+
+		<ENTITY ID="b7">
+			<ATTRIBUTE NAME="type" VALUE="button" />
+			<ATTRIBUTE NAME="color" VALUE="red" />
+			<ATTRIBUTE NAME="x" VALUE="11.7" />
+			<ATTRIBUTE NAME="y" VALUE="1.1" />
+			<ATTRIBUTE NAME="z" VALUE="8" />
+			<ATTRIBUTE NAME="size" VALUE="1" />
+			<ATTRIBUTE NAME="orientation" VALUE="up" />
+		</ENTITY>
+
+	</DOMAIN>
+
+
+	<DOMAIN ID="room-5" X="5.1" Y="9.4">
+
+		<ENTITY ID="d8">
+			<ATTRIBUTE NAME="type" VALUE="door" />
+			<ATTRIBUTE NAME="x" VALUE="5" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="2.5" />
+			<ATTRIBUTE NAME="size" VALUE="10" />
+			<ATTRIBUTE NAME="orientation" VALUE="left" />
+		</ENTITY>
+
+		<ENTITY ID="d9">
+			<ATTRIBUTE NAME="type" VALUE="door" />
+			<ATTRIBUTE NAME="x" VALUE="9" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="1.5" />
+			<ATTRIBUTE NAME="size" VALUE="10" />
+			<ATTRIBUTE NAME="orientation" VALUE="right" />
+		</ENTITY>
+
+		<ENTITY ID="b18">
+			<ATTRIBUTE NAME="type" VALUE="button" />
+			<ATTRIBUTE NAME="color" VALUE="green" />
+			<ATTRIBUTE NAME="x" VALUE="5" />
+			<ATTRIBUTE NAME="y" VALUE="0.9" />
+			<ATTRIBUTE NAME="z" VALUE="1.5" />
+			<ATTRIBUTE NAME="size" VALUE="1" />
+			<ATTRIBUTE NAME="orientation" VALUE="left" />
+		</ENTITY>
+
+		<ENTITY ID="b17">
+			<ATTRIBUTE NAME="type" VALUE="button" />
+			<ATTRIBUTE NAME="color" VALUE="green" />
+			<ATTRIBUTE NAME="x" VALUE="8.4" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="4" />
+			<ATTRIBUTE NAME="size" VALUE="1" />
+			<ATTRIBUTE NAME="orientation" VALUE="down" />
+		</ENTITY>
+
+		<ENTITY ID="couch1">
+			<ATTRIBUTE NAME="type" VALUE="couch" />
+			<ATTRIBUTE NAME="x" VALUE="6.3" />
+			<ATTRIBUTE NAME="y" VALUE="0.3" />
+			<ATTRIBUTE NAME="z" VALUE="1.3" />
+			<ATTRIBUTE NAME="size" VALUE="14" />
+			<ATTRIBUTE NAME="orientation" VALUE="right" />
+		</ENTITY>
+
+	</DOMAIN>
+
+	<DOMAIN ID="room-6" X="9.1" Y="12.8" COLOR="green">
+	
+		<ENTITY ID="d9">
+			<ATTRIBUTE NAME="type" VALUE="door" />
+			<ATTRIBUTE NAME="x" VALUE="9" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="1.5" />
+			<ATTRIBUTE NAME="size" VALUE="10" />
+			<ATTRIBUTE NAME="orientation" VALUE="left" />
+		</ENTITY>
+		
+		<ENTITY ID="d5">
+			<ATTRIBUTE NAME="type" VALUE="door" />
+			<ATTRIBUTE NAME="x" VALUE="10.5" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="8" />
+			<ATTRIBUTE NAME="size" VALUE="10" />
+			<ATTRIBUTE NAME="orientation" VALUE="down" />
+		</ENTITY>
+		
+		<ENTITY ID="d4">
+			<ATTRIBUTE NAME="type" VALUE="door" />
+			<ATTRIBUTE NAME="x" VALUE="9.5" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="8" />
+			<ATTRIBUTE NAME="size" VALUE="10" />
+			<ATTRIBUTE NAME="orientation" VALUE="down" />
+		</ENTITY>
+		
+		<ENTITY ID="d10">
+			<ATTRIBUTE NAME="type" VALUE="door" />
+			<ATTRIBUTE NAME="x" VALUE="12" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="7.5" />
+			<ATTRIBUTE NAME="size" VALUE="10" />
+			<ATTRIBUTE NAME="orientation" VALUE="right" />
+		</ENTITY>
+		
+		<ENTITY ID="b13">
+			<ATTRIBUTE NAME="type" VALUE="button" />
+			<ATTRIBUTE NAME="color" VALUE="blue" />
+			<ATTRIBUTE NAME="x" VALUE="12" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="3.6" />
+			<ATTRIBUTE NAME="size" VALUE="1" />
+			<ATTRIBUTE NAME="orientation" VALUE="right" />
+		</ENTITY>
+		
+		<ENTITY ID="b14">
+			<ATTRIBUTE NAME="type" VALUE="button" />
+			<ATTRIBUTE NAME="color" VALUE="red" />
+			<ATTRIBUTE NAME="x" VALUE="12" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="3.1" />
+			<ATTRIBUTE NAME="size" VALUE="1" />
+			<ATTRIBUTE NAME="orientation" VALUE="right" />
+		</ENTITY>
+		
+		<ENTITY ID="b15">
+			<ATTRIBUTE NAME="type" VALUE="button" />
+			<ATTRIBUTE NAME="color" VALUE="red" />
+			<ATTRIBUTE NAME="x" VALUE="10.9" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="1" />
+			<ATTRIBUTE NAME="size" VALUE="1" />
+			<ATTRIBUTE NAME="orientation" VALUE="up" />
+		</ENTITY>
+		
+		<ENTITY ID="b16">
+			<ATTRIBUTE NAME="type" VALUE="button" />
+			<ATTRIBUTE NAME="color" VALUE="red" />
+			<ATTRIBUTE NAME="x" VALUE="10.1" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="1" />
+			<ATTRIBUTE NAME="size" VALUE="1" />
+			<ATTRIBUTE NAME="orientation" VALUE="up" />
+		</ENTITY>
+		
+		<ENTITY ID="chair1">
+			<ATTRIBUTE NAME="type" VALUE="chair" />
+			<ATTRIBUTE NAME="x" VALUE="11.6" />
+			<ATTRIBUTE NAME="y" VALUE="0" />
+			<ATTRIBUTE NAME="z" VALUE="4.5" />
+			<ATTRIBUTE NAME="size" VALUE="5" />
+			<ATTRIBUTE NAME="orientation" VALUE="right" />
+		</ENTITY>
+	
+	</DOMAIN>
+	
+	<DOMAIN ID="room-7" X="12.1" Y="15.8" COLOR="blue">
+		
+		<ENTITY ID="d10">
+			<ATTRIBUTE NAME="type" VALUE="door" />
+			<ATTRIBUTE NAME="x" VALUE="12" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="7.5" />
+			<ATTRIBUTE NAME="size" VALUE="10" />
+			<ATTRIBUTE NAME="orientation" VALUE="left" />
+		</ENTITY>
+		
+		<ENTITY ID="d11">
+			<ATTRIBUTE NAME="type" VALUE="door" />
+			<ATTRIBUTE NAME="x" VALUE="12.5" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="8" />
+			<ATTRIBUTE NAME="size" VALUE="10" />
+			<ATTRIBUTE NAME="orientation" VALUE="down" />
+		</ENTITY>
+		
+		<ENTITY ID="b8">
+			<ATTRIBUTE NAME="type" VALUE="button" />
+			<ATTRIBUTE NAME="color" VALUE="blue" />
+			<ATTRIBUTE NAME="x" VALUE="12" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="4.9" />
+			<ATTRIBUTE NAME="size" VALUE="1" />
+			<ATTRIBUTE NAME="orientation" VALUE="left" />
+		</ENTITY>
+		
+		<ENTITY ID="b9">
+			<ATTRIBUTE NAME="type" VALUE="button" />
+			<ATTRIBUTE NAME="color" VALUE="blue" />
+			<ATTRIBUTE NAME="x" VALUE="12" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="4.3" />
+			<ATTRIBUTE NAME="size" VALUE="1" />
+			<ATTRIBUTE NAME="orientation" VALUE="left" />
+		</ENTITY>
+		
+		<ENTITY ID="b10">
+			<ATTRIBUTE NAME="type" VALUE="button" />
+			<ATTRIBUTE NAME="color" VALUE="yellow" />
+			<ATTRIBUTE NAME="x" VALUE="12" />
+			<ATTRIBUTE NAME="y" VALUE="1" />
+			<ATTRIBUTE NAME="z" VALUE="3.7" />
+			<ATTRIBUTE NAME="size" VALUE="1" />
+			<ATTRIBUTE NAME="orientation" VALUE="left" />
+		</ENTITY>
+		
+		<ENTITY ID="b11">
+			<ATTRIBUTE NAME="type" VALUE="button" />
+			<ATTRIBUTE NAME="color" VALUE="Red" />
+			<ATTRIBUTE NAME="x" VALUE="15" />
+			<ATTRIBUTE NAME="y" VALUE="1.2" />
+			<ATTRIBUTE NAME="z" VALUE="7.4" />
+			<ATTRIBUTE NAME="size" VALUE="1" />
+			<ATTRIBUTE NAME="orientation" VALUE="right" />
+		</ENTITY>
+		
+		<ENTITY ID="b12">
+			<ATTRIBUTE NAME="type" VALUE="button" />
+			<ATTRIBUTE NAME="color" VALUE="Red" />
+			<ATTRIBUTE NAME="x" VALUE="15" />
+			<ATTRIBUTE NAME="y" VALUE="1.2" />
+			<ATTRIBUTE NAME="z" VALUE="3.7" />
+			<ATTRIBUTE NAME="size" VALUE="1" />
+			<ATTRIBUTE NAME="orientation" VALUE="right" />
+		</ENTITY>
+		
+		<ENTITY ID="flower1">
+			<ATTRIBUTE NAME="type" VALUE="flower" />
+			<ATTRIBUTE NAME="x" VALUE="14.6" />
+			<ATTRIBUTE NAME="y" VALUE="0.45" />
+			<ATTRIBUTE NAME="z" VALUE="2.9" />
+			<ATTRIBUTE NAME="size" VALUE="6" />
+			<ATTRIBUTE NAME="orientation" VALUE="right" />
+		</ENTITY>
+	
+	</DOMAIN>
+
+</ATOMIC-PROPERTIES>

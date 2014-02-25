@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<!DOCTYPE TRIAL SYSTEM "furniture.dtd">
+<TRIAL CARDINALITY="1" CONDITION="+LOC" DOMAIN="furniture" ID="s31t7"
+	SIMILARITY="similar">
+	<DOMAIN>
+		<ENTITY ID="3" IMAGE="chairBackGreyLarge.gif" TYPE="target">
+			<ATTRIBUTE NAME="colour" TYPE="literal" VALUE="grey" />
+			<ATTRIBUTE NAME="orientation" TYPE="literal" VALUE="back" />
+			<ATTRIBUTE NAME="type" TYPE="literal" VALUE="chair" />
+			<ATTRIBUTE NAME="size" TYPE="literal" VALUE="large" />
+			<ATTRIBUTE NAME="x-dimension" TYPE="gradable" VALUE="3" />
+			<ATTRIBUTE NAME="y-dimension" TYPE="gradable" VALUE="3" />
+		</ENTITY>
+		<ENTITY ID="7" IMAGE="chairFrontGreyLarge.gif"
+			TYPE="distractor">
+			<ATTRIBUTE NAME="colour" TYPE="literal" VALUE="grey" />
+			<ATTRIBUTE NAME="orientation" TYPE="literal" VALUE="front" />
+			<ATTRIBUTE NAME="type" TYPE="literal" VALUE="chair" />
+			<ATTRIBUTE NAME="size" TYPE="literal" VALUE="large" />
+			<ATTRIBUTE NAME="x-dimension" TYPE="gradable" VALUE="4" />
+			<ATTRIBUTE NAME="y-dimension" TYPE="gradable" VALUE="1" />
+		</ENTITY>
+		<ENTITY ID="4" IMAGE="chairBackRedLarge.gif"
+			TYPE="distractor">
+			<ATTRIBUTE NAME="colour" TYPE="literal" VALUE="red" />
+			<ATTRIBUTE NAME="orientation" TYPE="literal" VALUE="back" />
+			<ATTRIBUTE NAME="type" TYPE="literal" VALUE="chair" />
+			<ATTRIBUTE NAME="size" TYPE="literal" VALUE="large" />
+			<ATTRIBUTE NAME="x-dimension" TYPE="gradable" VALUE="2" />
+			<ATTRIBUTE NAME="y-dimension" TYPE="gradable" VALUE="3" />
+		</ENTITY>
+		<ENTITY ID="67" IMAGE="chairBackGreySmall.gif"
+			TYPE="distractor">
+			<ATTRIBUTE NAME="colour" TYPE="literal" VALUE="grey" />
+			<ATTRIBUTE NAME="orientation" TYPE="literal" VALUE="back" />
+			<ATTRIBUTE NAME="type" TYPE="literal" VALUE="chair" />
+			<ATTRIBUTE NAME="size" TYPE="literal" VALUE="small" />
+			<ATTRIBUTE NAME="x-dimension" TYPE="gradable" VALUE="5" />
+			<ATTRIBUTE NAME="y-dimension" TYPE="gradable" VALUE="3" />
+		</ENTITY>
+		<ENTITY ID="23" IMAGE="deskFrontGreyLarge.gif"
+			TYPE="distractor">
+			<ATTRIBUTE NAME="colour" TYPE="literal" VALUE="grey" />
+			<ATTRIBUTE NAME="orientation" TYPE="literal" VALUE="front" />
+			<ATTRIBUTE NAME="type" TYPE="literal" VALUE="desk" />
+			<ATTRIBUTE NAME="size" TYPE="literal" VALUE="large" />
+			<ATTRIBUTE NAME="x-dimension" TYPE="gradable" VALUE="1" />
+			<ATTRIBUTE NAME="y-dimension" TYPE="gradable" VALUE="3" />
+		</ENTITY>
+		<ENTITY ID="20" IMAGE="deskBackRedLarge.gif"
+			TYPE="distractor">
+			<ATTRIBUTE NAME="colour" TYPE="literal" VALUE="red" />
+			<ATTRIBUTE NAME="orientation" TYPE="literal" VALUE="back" />
+			<ATTRIBUTE NAME="type" TYPE="literal" VALUE="desk" />
+			<ATTRIBUTE NAME="size" TYPE="literal" VALUE="large" />
+			<ATTRIBUTE NAME="x-dimension" TYPE="gradable" VALUE="1" />
+			<ATTRIBUTE NAME="y-dimension" TYPE="gradable" VALUE="2" />
+		</ENTITY>
+		<ENTITY ID="83" IMAGE="deskBackGreySmall.gif"
+			TYPE="distractor">
+			<ATTRIBUTE NAME="colour" TYPE="literal" VALUE="grey" />
+			<ATTRIBUTE NAME="orientation" TYPE="literal" VALUE="back" />
+			<ATTRIBUTE NAME="type" TYPE="literal" VALUE="desk" />
+			<ATTRIBUTE NAME="size" TYPE="literal" VALUE="small" />
+			<ATTRIBUTE NAME="x-dimension" TYPE="gradable" VALUE="5" />
+			<ATTRIBUTE NAME="y-dimension" TYPE="gradable" VALUE="2" />
+		</ENTITY>
+	</DOMAIN>
+	<STRING-DESCRIPTION>
+		the one at the bottom row, second from the left
+	</STRING-DESCRIPTION>
+	<DESCRIPTION NUM="singular">
+		<DET ID="3323" VALUE="definite">the</DET>
+		<ATTRIBUTE ID="a1" NAME="type" VALUE="other">one</ATTRIBUTE>
+		<META-ATTRIBUTE ID="a2" NAME="location" VALUE="bottom">
+			<ATTRIBUTE ID="a2" NAME="y-dimension" VALUE="3" />
+			at the bottom row
+		</META-ATTRIBUTE>
+		,
+		<META-ATTRIBUTE ID="a4" NAME="location" VALUE="left">
+			<ATTRIBUTE ID="a3" NAME="x-dimension" VALUE="3" />
+			second from the left
+		</META-ATTRIBUTE>
+	</DESCRIPTION>
+	<ATTRIBUTE-SET>
+		<ATTRIBUTE ID="a3" NAME="x-dimension" VALUE="3" />
+		<ATTRIBUTE ID="a2" NAME="y-dimension" VALUE="3" />
+		<ATTRIBUTE ID="a1" NAME="type" VALUE="other"></ATTRIBUTE>
+	</ATTRIBUTE-SET>
+</TRIAL>

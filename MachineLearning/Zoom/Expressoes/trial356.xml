@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+	<TRIAL ID="356" AGE="45" GENDER="m" DURATION="13">
+		<CONTEXT ID ="1" SEQ="2115" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="5"  SIZE2="0" WORD-STRING ="vamos comer um temaki na rua do capelo">
+			<ATTRIBUTE-SET1 TARGET.ID="rest3">
+				<ATTRIBUTE NAME="in" VALUE="str7" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str7" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua capelo" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="2" SEQ="2111" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="2"  SIZE2="0" WORD-STRING ="vamos tomar cafe">
+			<ATTRIBUTE-SET1 TARGET.ID="cafe1">
+				<ATTRIBUTE NAME="type" VALUE="cafe" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="3" SEQ="2113" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="6"  SIZE2="0" WORD-STRING ="estou com dor de barriga, preciso ir na farmacia da rua do ouro">
+			<ATTRIBUTE-SET1 TARGET.ID="drug3">
+				<ATTRIBUTE NAME="type" VALUE="drugstore" />
+				<ATTRIBUTE NAME="in" VALUE="str11" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str11" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua do ouro" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="4" SEQ="2112" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="6"  SIZE2="0" WORD-STRING ="vamos na igreja da rua do crucifixo para pedir pela paz">
+			<ATTRIBUTE-SET1 TARGET.ID="chur3">
+				<ATTRIBUTE NAME="type" VALUE="church" />
+				<ATTRIBUTE NAME="in" VALUE="str14" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str14" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua do crucifixo" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="5" SEQ="2114" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="6"  SIZE2="0" WORD-STRING ="ese pub da rua nova da trindade rola muito rock">
+			<ATTRIBUTE-SET1 TARGET.ID="pub1">
+				<ATTRIBUTE NAME="type" VALUE="pub" />
+				<ATTRIBUTE NAME="in" VALUE="str1" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str1" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua nova da trindade" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="6" SEQ="2122" STATUS="ok" AGREEMENT="no" ANNOTATOR="2"  SIZE1="9"  SIZE2="0" WORD-STRING ="mas depois da missa, na catedral do parque chiado, que fica perto do sacramento...">
+			<ATTRIBUTE-SET1 TARGET.ID="chur2">
+				<ATTRIBUTE NAME="type" VALUE="cathedral" />
+				<ATTRIBUTE NAME="in" VALUE="park1" />
+				<ATTRIBUTE NAME="next-to" VALUE="rest4" />
+				<ATTRIBUTE NAME="d1.id" VALUE="park1" />
+				<ATTRIBUTE NAME="d1.type" VALUE="park" />
+				<ATTRIBUTE NAME="d1.name" VALUE="chiado" />
+				<ATTRIBUTE NAME="d2.id" VALUE="rest4" />
+				<ATTRIBUTE NAME="d2.name" VALUE="o sacramento" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="7" SEQ="2116" STATUS="ok" AGREEMENT="no" ANNOTATOR="1"  SIZE1="6"  SIZE2="6" WORD-STRING ="depois vamos pegar um bolo na doceria que pode ser na rua garrett ou no largo do carmo,...">
+			<ATTRIBUTE-SET1 TARGET.ID="rest2">
+				<ATTRIBUTE NAME="type" VALUE="other" />
+				<ATTRIBUTE NAME="in" VALUE="str3" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str3" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua garret" />
+			</ATTRIBUTE-SET1>
+			<ATTRIBUTE-SET2 TARGET.ID="rest1">
+				<ATTRIBUTE NAME="type" VALUE="other" />
+				<ATTRIBUTE NAME="in" VALUE="str8" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str8" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="largo do carmo" />
+			</ATTRIBUTE-SET2>
+		</CONTEXT>
+		<CONTEXT ID ="8" SEQ="2119" STATUS="ok" AGREEMENT="no" ANNOTATOR="1"  SIZE1="3"  SIZE2="0" WORD-STRING ="mas como sou japones, a farmacia internacional pode ter o remedio importado do japao...">
+			<ATTRIBUTE-SET1 TARGET.ID="drug2">
+				<ATTRIBUTE NAME="type" VALUE="drugstore" />
+				<ATTRIBUTE NAME="name" VALUE="internacional" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="9" SEQ="2117" STATUS="ok" AGREEMENT="no" ANNOTATOR="1"  SIZE1="7"  SIZE2="0" WORD-STRING ="se der dor de barrga, temos 3 farmacias na rua do outro, eu preciso ir na farmacia cortez">
+			<ATTRIBUTE-SET1 TARGET.ID="drug4">
+				<ATTRIBUTE NAME="type" VALUE="drugstore" />
+				<ATTRIBUTE NAME="name" VALUE="cortez" />
+				<ATTRIBUTE NAME="in" VALUE="str11" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str11" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua do ouro" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="10" SEQ="2120" STATUS="ok" AGREEMENT="no" ANNOTATOR="2"  SIZE1="9"  SIZE2="0" WORD-STRING ="vamos comer pizza? pode ser no O Sacramento, no parque chiado, perto do largo do carmo">
+			<ATTRIBUTE-SET1 TARGET.ID="rest4">
+				<ATTRIBUTE NAME="name" VALUE="o sacramento" />
+				<ATTRIBUTE NAME="in" VALUE="park1" />
+				<ATTRIBUTE NAME="next-to" VALUE="str8" />
+				<ATTRIBUTE NAME="d1.id" VALUE="park1" />
+				<ATTRIBUTE NAME="d1.type" VALUE="park" />
+				<ATTRIBUTE NAME="d1.name" VALUE="parque chiado" />
+				<ATTRIBUTE NAME="d2.id" VALUE="str8" />
+				<ATTRIBUTE NAME="d2.name" VALUE="largo do carmo" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="11" SEQ="2127" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="2"  SIZE2="0" WORD-STRING ="..ou comer esfiha no jaffeehaus, a melhor esfiha da cidade..">
+			<ATTRIBUTE-SET1 TARGET.ID="rest3">
+				<ATTRIBUTE NAME="name" VALUE="kaffeehaus" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="12" SEQ="2123" STATUS="ok" AGREEMENT="no" ANNOTATOR="2"  SIZE1="5"  SIZE2="0" WORD-STRING ="amanha vamos tomar um delicioso cafe na rua serpa pinto, cafe mineiro uai! mas muuitooo bommm">
+			<ATTRIBUTE-SET1 TARGET.ID="cafe1">
+				<ATTRIBUTE NAME="in" VALUE="str2" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str2" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua serpa pinto" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="13" SEQ="2125" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="2"  SIZE2="0" WORD-STRING ="e almocar na taberna do chiado, tomando um chopps de sabado...">
+			<ATTRIBUTE-SET1 TARGET.ID="rest5">
+				<ATTRIBUTE NAME="name" VALUE="taberna do chiado" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="14" SEQ="2124" STATUS="ok" AGREEMENT="no" ANNOTATOR="2"  SIZE1="6"  SIZE2="0" WORD-STRING ="depois da missa da quinta na catedral perto da rua do ouro..">
+			<ATTRIBUTE-SET1 TARGET.ID="chur3">
+				<ATTRIBUTE NAME="type" VALUE="cathedral" />
+				<ATTRIBUTE NAME="next-to" VALUE="str11" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str11" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua do ouro" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="15" SEQ="2126" STATUS="ok" AGREEMENT="no" ANNOTATOR="1"  SIZE1="2"  SIZE2="0" WORD-STRING ="A noite vamos beber todas na carioca da trindade, aonde ha petiscos muito saborosos">
+			<ATTRIBUTE-SET1 TARGET.ID="pub1">
+				<ATTRIBUTE NAME="name" VALUE="carioca da trindade" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="16" SEQ="2133" STATUS="ok" AGREEMENT="no" ANNOTATOR="1"  SIZE1="2"  SIZE2="0" WORD-STRING ="e a noite tem missa as 18:00 na catedral do sacramento( o rest. faz jus ao nome)!">
+			<ATTRIBUTE-SET1 TARGET.ID="chur2">
+				<ATTRIBUTE NAME="type" VALUE="other" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="17" SEQ="2129" STATUS="ok" AGREEMENT="no" ANNOTATOR="2"  SIZE1="6"  SIZE2="0" WORD-STRING ="estou cansado da academia, vou repor vitaminas na vitaminas garret, que como nome diz fica na propria rua garret, o fundador do bairro">
+			<ATTRIBUTE-SET1 TARGET.ID="rest2">
+				<ATTRIBUTE NAME="name" VALUE="vitaminas garret" />
+				<ATTRIBUTE NAME="in" VALUE="str3" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str3" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua garret" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="18" SEQ="2131" STATUS="ok" AGREEMENT="no" ANNOTATOR="1"  SIZE1="3"  SIZE2="0" WORD-STRING ="mas a farmacia internacional tem shinseng, um extrato oriental para dar forcas para o dia seguinte...">
+			<ATTRIBUTE-SET1 TARGET.ID="drug2">
+				<ATTRIBUTE NAME="type" VALUE="drugstore" />
+				<ATTRIBUTE NAME="name" VALUE="internacional" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="19" SEQ="2130" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="3"  SIZE2="0" WORD-STRING ="to com enxaqueca, vou na farmacia cortez, la e 24 horas!">
+			<ATTRIBUTE-SET1 TARGET.ID="drug4">
+				<ATTRIBUTE NAME="type" VALUE="drugstore" />
+				<ATTRIBUTE NAME="name" VALUE="cortez" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="20" SEQ="2132" STATUS="ok" AGREEMENT="no" ANNOTATOR="2"  SIZE1="9"  SIZE2="0" WORD-STRING ="e sabado, vamos de feijoada do o sacramento, a melhor da regiao! fica, na calcada do sacramento, proximo da rua do almirante pessanha!">
+			<ATTRIBUTE-SET1 TARGET.ID="rest4">
+				<ATTRIBUTE NAME="name" VALUE="o sacramento" />
+				<ATTRIBUTE NAME="in" VALUE="str16" />
+				<ATTRIBUTE NAME="next-to" VALUE="str19" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str16" />
+				<ATTRIBUTE NAME="d1.name" VALUE="calcada do sacramento" />
+				<ATTRIBUTE NAME="d2.id" VALUE="str19" />
+				<ATTRIBUTE NAME="d2.type" VALUE="street" />
+				<ATTRIBUTE NAME="d2.name" VALUE="rua almirante pessanha" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+</TRIAL>

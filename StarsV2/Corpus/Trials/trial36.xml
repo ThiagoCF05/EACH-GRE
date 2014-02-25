@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<TRIAL ID="36" SPEAKER="36" AGE="19" GENDER="m">
+
+  <CONTEXT ID="abs1">
+    <ATTRIBUTE-SET TARGET="e2" LANDMARK="q2" SECOND-LANDMARK="c1" STRING=" uma estrela de ponta cabeça que está do lado de um quadrado branco e de um circulo afastado " LENGTH="8" OVERSPEC="5">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="near" VALUE="q2" />
+      <ATTRIBUTE NAME="landmark-near" VALUE="c1" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="abs3">
+    <ATTRIBUTE-SET TARGET="e2" LANDMARK="q1" SECOND-LANDMARK="c1" STRING=" estrela de ponta cabeça que está do lado do quadrado e de um circulo um pouco afastado " LENGTH="7" OVERSPEC="4">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+      <ATTRIBUTE NAME="near" VALUE="q1" />
+      <ATTRIBUTE NAME="landmark-near" VALUE="c1" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="abs5">
+    <ATTRIBUTE-SET TARGET="e3" LANDMARK="q6" SECOND-LANDMARK="c2" STRING=" uma estrela branca que está do lado de um quadrado branco e de um circulo branco afastado" LENGTH="10" OVERSPEC="7">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+      <ATTRIBUTE NAME="colour" VALUE="white" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="second-landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="near" VALUE="q6" />
+      <ATTRIBUTE NAME="landmark-near" VALUE="c2" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="fill1">
+    <ATTRIBUTE-SET TARGET="e1" LANDMARK="q1" SECOND-LANDMARK="c3" STRING=" uma estrela branca, que está à direita de um quadrado branco e de um circulo vermelho " LENGTH="9" OVERSPEC="5">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+      <ATTRIBUTE NAME="colour" VALUE="white" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="second-landmark-colour" VALUE="red" />
+      <ATTRIBUTE NAME="right" VALUE="q1" />
+      <ATTRIBUTE NAME="landmark-right" VALUE="c3" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="fill2">
+    <ATTRIBUTE-SET TARGET="e1" LANDMARK="q3" STRING=" uma estrela de ponta cabeça que está do lado do quadrado vermelho " LENGTH="6" OVERSPEC="4">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="red" />
+      <ATTRIBUTE NAME="near" VALUE="q3" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="fill3">
+    <ATTRIBUTE-SET TARGET="e2" LANDMARK="q6" SECOND-LANDMARK="c1" STRING=" uma estrela de ponta cabeça que está do lado esquerdo de um quadrado e de um circulo branco " LENGTH="7" OVERSPEC="2">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+      <ATTRIBUTE NAME="second-landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="left" VALUE="q6" />
+      <ATTRIBUTE NAME="landmark-left" VALUE="c1" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="fill4">
+    <ATTRIBUTE-SET TARGET="e5" LANDMARK="q1" SECOND-LANDMARK="c2" STRING=" uma estrela branca do lado esquerdo de um quadrado e um circulo branco " LENGTH="8" OVERSPEC="3">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+      <ATTRIBUTE NAME="colour" VALUE="white" />
+      <ATTRIBUTE NAME="second-landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="left" VALUE="q1" />
+      <ATTRIBUTE NAME="landmark-left" VALUE="c2" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="fill5">
+    <ATTRIBUTE-SET TARGET="e5" LANDMARK="q2" SECOND-LANDMARK="c2" STRING=" estrela que está do lado de um quadrado e um circulo branco" LENGTH="8" OVERSPEC="1">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+      <ATTRIBUTE NAME="second-landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="near" VALUE="q2" />
+      <ATTRIBUTE NAME="landmark-near" VALUE="c2" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="proj1">
+    <ATTRIBUTE-SET TARGET="e2" LANDMARK="q1" SECOND-LANDMARK="c1" STRING=" uma estrela de ponta cabeça que está do lado direito de um quadrado branco e de um circulo branco afastado " LENGTH="8" OVERSPEC="5">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="second-landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="right" VALUE="q1" />
+      <ATTRIBUTE NAME="landmark-right" VALUE="c1" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="proj3">
+    <ATTRIBUTE-SET TARGET="e4" LANDMARK="q4" SECOND-LANDMARK="c2" STRING=" estrela branca que está do lado esquerdo de um quadrado e de um circulo afastado " LENGTH="6" OVERSPEC="3">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+      <ATTRIBUTE NAME="left" VALUE="q4" />
+      <ATTRIBUTE NAME="landmark-left" VALUE="c2" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="proj5">
+    <ATTRIBUTE-SET TARGET="e2" LANDMARK="q6" SECOND-LANDMARK="c2" STRING=" uma estrela de ponta cabeça que está do lado de um quadrado e de um circulo branco afastado " LENGTH="8" OVERSPEC="5">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+      <ATTRIBUTE NAME="second-landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="near" VALUE="q6" />
+      <ATTRIBUTE NAME="landmark-near" VALUE="c2" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+</TRIAL>

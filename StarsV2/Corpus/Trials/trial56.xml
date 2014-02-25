@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<TRIAL ID="56" SPEAKER="56" AGE="20" GENDER="m">
+
+  <CONTEXT ID="abs1">
+    <ATTRIBUTE-SET TARGET="e2" LANDMARK="q2" STRING=" que se encontra ao lado esquerdo do quadrado branco  " LENGTH="6" OVERSPEC="3">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="left" VALUE="q2" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="abs3">
+    <ATTRIBUTE-SET TARGET="e2" LANDMARK="q1" STRING=" que se encontra ao lado direito do quadrado branco " LENGTH="6" OVERSPEC="3">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="right" VALUE="q1" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="abs5">
+    <ATTRIBUTE-SET TARGET="e3" LANDMARK="q6" STRING=" que se encontra ao lado esquerdo do quadrado branco " LENGTH="6" OVERSPEC="3">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="left" VALUE="q6" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="fill1">
+    <ATTRIBUTE-SET TARGET="e1" LANDMARK="q1" SECOND-LANDMARK="c3" STRING=" que se encontra à direita do quadrado branco onde esse mesmo quadrado possui um círculo vermelho ao lado esquerdo " LENGTH="8" OVERSPEC="4">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="second-landmark-colour" VALUE="red" />
+      <ATTRIBUTE NAME="right" VALUE="q1" />
+      <ATTRIBUTE NAME="landmark-right" VALUE="c3" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="fill2">
+    <ATTRIBUTE-SET TARGET="e1" LANDMARK="q3" STRING=" que se encontra ao lado direto do quadrado vermelho " LENGTH="6" OVERSPEC="4">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="red" />
+      <ATTRIBUTE NAME="right" VALUE="q3" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="fill3">
+    <ATTRIBUTE-SET TARGET="e2" LANDMARK="q6" STRING=" que se encontra do lado esquerdo do quadrado branco  " LENGTH="6" OVERSPEC="1">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="left" VALUE="q6" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="fill4">
+    <ATTRIBUTE-SET TARGET="e5" LANDMARK="q1" STRING=" que se encontra  ao lado esquerdo do quadrado branco " LENGTH="6" OVERSPEC="1">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="left" VALUE="q1" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="fill5">
+    <ATTRIBUTE-SET TARGET="e5" LANDMARK="q2" STRING=" que se encontra no lado direito do quadrado branco , onde o mesmo possui uma estrela do lado esquerdo " LENGTH="6" OVERSPEC="0">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="right" VALUE="q2" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="proj1">
+    <ATTRIBUTE-SET TARGET="e2" LANDMARK="q1" STRING=" estrela do lado direito do quadrado " LENGTH="5" OVERSPEC="2">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="right" VALUE="q1" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="proj3">
+    <ATTRIBUTE-SET TARGET="e4" LANDMARK="q4" STRING="a que se encontra ao lado esquerdo do quadrado  " LENGTH="5" OVERSPEC="2">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="left" VALUE="q4" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="proj5">
+    <ATTRIBUTE-SET TARGET="e2" LANDMARK="q6" SECOND-LANDMARK="c2" STRING=" que se encontra ao lado esquerdo do quadrado onde esse mesmo quadrado possui um circulo branco a suà esquerda  " LENGTH="7" OVERSPEC="4">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+      <ATTRIBUTE NAME="second-landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="left" VALUE="q6" />
+      <ATTRIBUTE NAME="landmark-left" VALUE="c2" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+</TRIAL>

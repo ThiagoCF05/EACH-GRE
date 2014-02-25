@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<TRIAL ID="28" SPEAKER="28" AGE="23" GENDER="m">
+
+  <CONTEXT ID="abs1">
+    <ATTRIBUTE-SET TARGET="e2" STRING=" o objeto de ângulos agudos que precede um objeto de ângulos retos " LENGTH="4" OVERSPEC="1">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="left" VALUE="q2" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="abs3">
+    <ATTRIBUTE-SET TARGET="e2" STRING=" o objeto de ângulos agudos que vem em seguida do objeto de ângulos retos " LENGTH="4" OVERSPEC="1">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="near" VALUE="q1" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="abs5">
+    <ATTRIBUTE-SET TARGET="e3" STRING=" o objeto de ângulos agudos que precede o objeto de ângulos retos" LENGTH="4" OVERSPEC="1">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="left" VALUE="q6" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="fill1">
+    <ATTRIBUTE-SET TARGET="e1" STRING=" o objeto de ângulos agudos preenchido de branco " LENGTH="4" OVERSPEC="0">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="colour" VALUE="white" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="fill2">
+    <ATTRIBUTE-SET TARGET="e1" STRING=" o objeto de ângulos agudos preenchido de branco " LENGTH="4" OVERSPEC="2">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="colour" VALUE="white" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="fill3">
+    <ATTRIBUTE-SET TARGET="e2" LANDMARK="q6" STRING=" o objeto de ângulos agudos que precede um objeto de ângulos retos preenchido de branco " LENGTH="5" OVERSPEC="0">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="near" VALUE="q6" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="fill4">
+    <ATTRIBUTE-SET TARGET="e5" LANDMARK="q1" STRING=" o objeto de ângulos agudos que precede um objeto de ângulos retos preenchido de branco " LENGTH="4" OVERSPEC="0">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="fill5">
+    <ATTRIBUTE-SET TARGET="e5" SECOND-LANDMARK="c2" STRING=" o objeto de ângulos agudos que vem em seguida da sequencia cujo primeiro objeto é redondo e preenchido de branco e o segundo tem os ângulos retos" LENGTH="7" OVERSPEC="0">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+      <ATTRIBUTE NAME="second-landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="near" VALUE="q2" />
+      <ATTRIBUTE NAME="landmark-near" VALUE="c2" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="proj1">
+    <ATTRIBUTE-SET TARGET="e2" STRING=" o objeto de ângulos agudos que vem em seguida do objeto de ângulos retos " LENGTH="4" OVERSPEC="1">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="near" VALUE="q1" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="proj3">
+    <ATTRIBUTE-SET TARGET="e4" STRING=" o objeto de ângulos agudos que precede o objeto de ângulos retos " LENGTH="4" OVERSPEC="1">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="left" VALUE="q4" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="proj5">
+    <ATTRIBUTE-SET TARGET="e2" STRING=" objeto de ângulos agudos que precede um objeto de ângulos retos " LENGTH="4" OVERSPEC="1">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="left" VALUE="q6" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+</TRIAL>

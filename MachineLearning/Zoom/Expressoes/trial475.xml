@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+	<TRIAL ID="475" AGE="30" GENDER="f" DURATION="33">
+		<CONTEXT ID ="1" SEQ="3392" STATUS="ok" AGREEMENT="no" ANNOTATOR="1"  SIZE1="14"  SIZE2="0" WORD-STRING ="o restaurante localizado na Rua Anchieta esquina com a Rua Capelo, proximo ao Governo Civil">
+			<ATTRIBUTE-SET1 TARGET.ID="rest3">
+				<ATTRIBUTE NAME="type" VALUE="restaurant" />
+				<ATTRIBUTE NAME="between" VALUE="[str6,str7]" />
+				<ATTRIBUTE NAME="next-to" VALUE="gov1" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str6" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua anchieta" />
+				<ATTRIBUTE NAME="d1.other" VALUE="corner" />
+				<ATTRIBUTE NAME="d2.id" VALUE="str7" />
+				<ATTRIBUTE NAME="d2.type" VALUE="street" />
+				<ATTRIBUTE NAME="d2.name" VALUE="rua capelo" />
+				<ATTRIBUTE NAME="d3.id" VALUE="gov1" />
+				<ATTRIBUTE NAME="d3.type" VALUE="building" />
+				<ATTRIBUTE NAME="d3.name" VALUE="governo civil" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="2" SEQ="3382" STATUS="ok" AGREEMENT="no" ANNOTATOR="1"  SIZE1="10"  SIZE2="0" WORD-STRING ="o cafe localizado na esquina da Rua Garret com a Rua Largo do Picadeiro">
+			<ATTRIBUTE-SET1 TARGET.ID="cafe1">
+				<ATTRIBUTE NAME="type" VALUE="cafe" />
+				<ATTRIBUTE NAME="between" VALUE="[str3,str4]" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str3" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua garret" />
+				<ATTRIBUTE NAME="d1.other" VALUE="corner" />
+				<ATTRIBUTE NAME="d2.id" VALUE="str4" />
+				<ATTRIBUTE NAME="d2.type" VALUE="street" />
+				<ATTRIBUTE NAME="d2.name" VALUE="largo do picadeiro" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="3" SEQ="3389" STATUS="ok" AGREEMENT="no" ANNOTATOR="1"  SIZE1="13"  SIZE2="0" WORD-STRING ="a farmacia localizada na Rua do Ouro na esquina com a Rua da Vitoria, quase em frente a igreja">
+			<ATTRIBUTE-SET1 TARGET.ID="drug3">
+				<ATTRIBUTE NAME="type" VALUE="drugstore" />
+				<ATTRIBUTE NAME="between" VALUE="[str11,str12]" />
+				<ATTRIBUTE NAME="in-front-of" VALUE="chur3" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str11" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua do ouro" />
+				<ATTRIBUTE NAME="d1.other" VALUE="corner" />
+				<ATTRIBUTE NAME="d2.id" VALUE="str12" />
+				<ATTRIBUTE NAME="d2.type" VALUE="street" />
+				<ATTRIBUTE NAME="d2.name" VALUE="rua da vitoria" />
+				<ATTRIBUTE NAME="d3.id" VALUE="chur3" />
+				<ATTRIBUTE NAME="d3.type" VALUE="church" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="4" SEQ="3394" STATUS="edited" AGREEMENT="no" ANNOTATOR="1"  SIZE1="11"  SIZE2="0" WORD-STRING ="a igreja na Rua do Ouro, esquina com a Rua da Vitoria">
+			<ATTRIBUTE-SET1 TARGET.ID="chur3">
+				<ATTRIBUTE NAME="type" VALUE="church" />
+				<ATTRIBUTE NAME="between" VALUE="[str11,str12]" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str11" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua do ouro" />
+				<ATTRIBUTE NAME="d1.other" VALUE="corner" />
+				<ATTRIBUTE NAME="d2.id" VALUE="str12" />
+				<ATTRIBUTE NAME="d2.type" VALUE="street" />
+				<ATTRIBUTE NAME="d2.name" VALUE="rua da vitoria" />
+				<ATTRIBUTE NAME="d2.other" VALUE="corner" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="5" SEQ="3386" STATUS="ok" AGREEMENT="no" ANNOTATOR="1"  SIZE1="11"  SIZE2="0" WORD-STRING ="o pub no final da rua Serpa Pinto proximo ao restaurante Aqui ha Peixe">
+			<ATTRIBUTE-SET1 TARGET.ID="pub1">
+				<ATTRIBUTE NAME="type" VALUE="pub" />
+				<ATTRIBUTE NAME="in" VALUE="str2" />
+				<ATTRIBUTE NAME="next-to" VALUE="rest1" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str2" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua serpa pinto" />
+				<ATTRIBUTE NAME="d1.other" VALUE="end" />
+				<ATTRIBUTE NAME="d2.id" VALUE="rest1" />
+				<ATTRIBUTE NAME="d2.type" VALUE="restaurant" />
+				<ATTRIBUTE NAME="d2.name" VALUE="aqui ha peixe" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="6" SEQ="3409" STATUS="ok" AGREEMENT="no" ANNOTATOR="2"  SIZE1="10"  SIZE2="6" WORD-STRING ="a igreja localizada no Parque Chiado proxima ao restaurante O Sacramento e tambem conhecer a igreja localizada na Rua do Ouro">
+			<ATTRIBUTE-SET1 TARGET.ID="chur2">
+				<ATTRIBUTE NAME="type" VALUE="church" />
+				<ATTRIBUTE NAME="in" VALUE="park1" />
+				<ATTRIBUTE NAME="next-to" VALUE="rest4" />
+				<ATTRIBUTE NAME="d1.id" VALUE="park1" />
+				<ATTRIBUTE NAME="d1.type" VALUE="park" />
+				<ATTRIBUTE NAME="d1.name" VALUE="chiado" />
+				<ATTRIBUTE NAME="d2.id" VALUE="rest4" />
+				<ATTRIBUTE NAME="d2.type" VALUE="restaurant" />
+				<ATTRIBUTE NAME="d2.name" VALUE="o sacramento" />
+			</ATTRIBUTE-SET1>
+			<ATTRIBUTE-SET2 TARGET.ID="chur3">
+				<ATTRIBUTE NAME="type" VALUE="church" />
+				<ATTRIBUTE NAME="in" VALUE="str11" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str11" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua do ouro" />
+			</ATTRIBUTE-SET2>
+		</CONTEXT>
+		<CONTEXT ID ="7" SEQ="3397" STATUS="edited" AGREEMENT="no" ANNOTATOR="1"  SIZE1="8"  SIZE2="13" WORD-STRING ="o restaurante Aqui ha Peixe no final da Rua Serpa Pinto e o restaurante da Rua Garret entre as travessas das Ruas Anchieta e Ivens">
+			<ATTRIBUTE-SET1 TARGET.ID="rest1">
+				<ATTRIBUTE NAME="type" VALUE="restaurant" />
+				<ATTRIBUTE NAME="name" VALUE="aqui ha peixe" />
+				<ATTRIBUTE NAME="in" VALUE="str2" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str2" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua serpa pinto" />
+				<ATTRIBUTE NAME="d1.other" VALUE="end" />
+			</ATTRIBUTE-SET1>
+			<ATTRIBUTE-SET2 TARGET.ID="rest2">
+				<ATTRIBUTE NAME="type" VALUE="restaurant" />
+				<ATTRIBUTE NAME="in" VALUE="str3" />
+				<ATTRIBUTE NAME="between" VALUE="[str6,str9]" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str3" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua garret" />
+				<ATTRIBUTE NAME="d2.id" VALUE="str6" />
+				<ATTRIBUTE NAME="d2.type" VALUE="street" />
+				<ATTRIBUTE NAME="d2.name" VALUE="rua anchieta" />
+				<ATTRIBUTE NAME="d3.id" VALUE="str9" />
+				<ATTRIBUTE NAME="d3.type" VALUE="street" />
+				<ATTRIBUTE NAME="d3.name" VALUE="rua ivens" />
+			</ATTRIBUTE-SET2>
+		</CONTEXT>
+		<CONTEXT ID ="8" SEQ="3406" STATUS="ok" AGREEMENT="no" ANNOTATOR="1"  SIZE1="7"  SIZE2="12" WORD-STRING ="a Farmacia Internacional na Rua do Ouro e a farmacia localizada tambem na Rua do Ouro entre a igreja e a Farmacia Cortez">
+			<ATTRIBUTE-SET1 TARGET.ID="drug2">
+				<ATTRIBUTE NAME="type" VALUE="drugstore" />
+				<ATTRIBUTE NAME="name" VALUE="internacional" />
+				<ATTRIBUTE NAME="in" VALUE="str11" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str11" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua do ouro" />
+			</ATTRIBUTE-SET1>
+			<ATTRIBUTE-SET2 TARGET.ID="drug3">
+				<ATTRIBUTE NAME="type" VALUE="drugstore" />
+				<ATTRIBUTE NAME="in" VALUE="str11" />
+				<ATTRIBUTE NAME="between" VALUE="[chur3,drug4]" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str11" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua do ouro" />
+				<ATTRIBUTE NAME="d2.id" VALUE="chur3" />
+				<ATTRIBUTE NAME="d2.type" VALUE="church" />
+				<ATTRIBUTE NAME="d3.id" VALUE="drug4" />
+				<ATTRIBUTE NAME="d3.type" VALUE="drugstore" />
+				<ATTRIBUTE NAME="d3.name" VALUE="cortez" />
+			</ATTRIBUTE-SET2>
+		</CONTEXT>
+		<CONTEXT ID ="9" SEQ="3410" STATUS="ok" AGREEMENT="no" ANNOTATOR="1"  SIZE1="9"  SIZE2="3" WORD-STRING ="a farmacia localizada na Rua do Ouro proxima a igreja e tambem a Farmacia Cortez proxima ao posto de gasolina">
+			<ATTRIBUTE-SET1 TARGET.ID="drug3">
+				<ATTRIBUTE NAME="type" VALUE="drugstore" />
+				<ATTRIBUTE NAME="in" VALUE="str11" />
+				<ATTRIBUTE NAME="next-to" VALUE="chur3" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str11" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua do ouro" />
+				<ATTRIBUTE NAME="d2.id" VALUE="chur3" />
+				<ATTRIBUTE NAME="d2.type" VALUE="church" />
+			</ATTRIBUTE-SET1>
+			<ATTRIBUTE-SET2 TARGET.ID="drug4">
+				<ATTRIBUTE NAME="type" VALUE="drugstore" />
+				<ATTRIBUTE NAME="name" VALUE="cortez" />
+			</ATTRIBUTE-SET2>
+		</CONTEXT>
+		<CONTEXT ID ="10" SEQ="3400" STATUS="ok" AGREEMENT="no" ANNOTATOR="2"  SIZE1="9"  SIZE2="14" WORD-STRING ="o restaurante O Sacramento proximo a Largo do Carmo e ao Parque Chiado e tambem conhecer a Taberna Chiado na Rua Garret entre as Ruas Ivens e Nova do Almada">
+			<ATTRIBUTE-SET1 TARGET.ID="rest4">
+				<ATTRIBUTE NAME="type" VALUE="restaurant" />
+				<ATTRIBUTE NAME="name" VALUE="o sacramento" />
+				<ATTRIBUTE NAME="next-to" VALUE="str8,park1" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str8" />
+				<ATTRIBUTE NAME="d1.name" VALUE="largo do carmo" />
+				<ATTRIBUTE NAME="d2.id" VALUE="park1" />
+				<ATTRIBUTE NAME="d2.type" VALUE="park" />
+				<ATTRIBUTE NAME="d2.name" VALUE="chiado" />
+			</ATTRIBUTE-SET1>
+			<ATTRIBUTE-SET2 TARGET.ID="rest5">
+				<ATTRIBUTE NAME="type" VALUE="restaurant" />
+				<ATTRIBUTE NAME="name" VALUE="taberna do chiado" />
+				<ATTRIBUTE NAME="in" VALUE="str3" />
+				<ATTRIBUTE NAME="between" VALUE="[str9,str10]" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str3" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua garret" />
+				<ATTRIBUTE NAME="d2.id" VALUE="str9" />
+				<ATTRIBUTE NAME="d2.type" VALUE="street" />
+				<ATTRIBUTE NAME="d2.name" VALUE="rua ivens" />
+				<ATTRIBUTE NAME="d3.id" VALUE="str10" />
+				<ATTRIBUTE NAME="d3.type" VALUE="street" />
+				<ATTRIBUTE NAME="d3.name" VALUE="rua nova da almada" />
+			</ATTRIBUTE-SET2>
+		</CONTEXT>
+		<CONTEXT ID ="11" SEQ="3414" STATUS="ok" AGREEMENT="no" ANNOTATOR="1"  SIZE1="11"  SIZE2="0" WORD-STRING ="o restaurante Kaffeehaus na Rua Anchieta esquina com a Rua Capelo">
+			<ATTRIBUTE-SET1 TARGET.ID="rest3">
+				<ATTRIBUTE NAME="type" VALUE="restaurant" />
+				<ATTRIBUTE NAME="name" VALUE="kaffeehaus" />
+				<ATTRIBUTE NAME="between" VALUE="[str6,str7]" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str6" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua anchieta" />
+				<ATTRIBUTE NAME="d1.other" VALUE="corner" />
+				<ATTRIBUTE NAME="d2.id" VALUE="str7" />
+				<ATTRIBUTE NAME="d2.type" VALUE="street" />
+				<ATTRIBUTE NAME="d2.name" VALUE="rua capelo" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="12" SEQ="3411" STATUS="ok" AGREEMENT="no" ANNOTATOR="1"  SIZE1="10"  SIZE2="0" WORD-STRING ="o cafe localizado na Rua Garret na esquina com a Rua Serpa Pinto">
+			<ATTRIBUTE-SET1 TARGET.ID="cafe1">
+				<ATTRIBUTE NAME="type" VALUE="cafe" />
+				<ATTRIBUTE NAME="between" VALUE="[str3,str2]" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str3" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua garret" />
+				<ATTRIBUTE NAME="d1.other" VALUE="corner" />
+				<ATTRIBUTE NAME="d2.id" VALUE="str2" />
+				<ATTRIBUTE NAME="d2.type" VALUE="street" />
+				<ATTRIBUTE NAME="d2.name" VALUE="rua serpa pinto" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="13" SEQ="3413" STATUS="ok" AGREEMENT="no" ANNOTATOR="1"  SIZE1="11"  SIZE2="0" WORD-STRING ="o restaurante O Sacramento na Calcada do Sacramento ao lado do bar.">
+			<ATTRIBUTE-SET1 TARGET.ID="rest4">
+				<ATTRIBUTE NAME="type" VALUE="restaurant" />
+				<ATTRIBUTE NAME="name" VALUE="o sacramento" />
+				<ATTRIBUTE NAME="in" VALUE="str16" />
+				<ATTRIBUTE NAME="right-to" VALUE="pub2" />
+				<ATTRIBUTE NAME="left-to" VALUE="pub2" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str16" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="calcada do sacramento" />
+				<ATTRIBUTE NAME="d2.id" VALUE="pub2" />
+				<ATTRIBUTE NAME="d2.type" VALUE="pub" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="14" SEQ="3415" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="6"  SIZE2="0" WORD-STRING ="a igreja localizada na Rua do Ouro proxima a faixa de pedestres">
+			<ATTRIBUTE-SET1 TARGET.ID="chur3">
+				<ATTRIBUTE NAME="type" VALUE="church" />
+				<ATTRIBUTE NAME="in" VALUE="str11" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str11" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua do ouro" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="15" SEQ="3412" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="11"  SIZE2="0" WORD-STRING ="ao pub Carioca da Trindade na Rua da Trindade proximo ao restaurante Aqui ha Peixe">
+			<ATTRIBUTE-SET1 TARGET.ID="pub1">
+				<ATTRIBUTE NAME="type" VALUE="pub" />
+				<ATTRIBUTE NAME="name" VALUE="carioca da trindade" />
+				<ATTRIBUTE NAME="in" VALUE="str17" />
+				<ATTRIBUTE NAME="next-to" VALUE="rest1" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str17" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua da trindade" />
+				<ATTRIBUTE NAME="d2.id" VALUE="rest1" />
+				<ATTRIBUTE NAME="d2.type" VALUE="restaurant" />
+				<ATTRIBUTE NAME="d2.name" VALUE="aqui ha peixe" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="16" SEQ="3419" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="6"  SIZE2="0" WORD-STRING ="a igreja proximo ao restaurante O Sacramento">
+			<ATTRIBUTE-SET1 TARGET.ID="chur2">
+				<ATTRIBUTE NAME="type" VALUE="church" />
+				<ATTRIBUTE NAME="next-to" VALUE="rest4" />
+				<ATTRIBUTE NAME="d1.id" VALUE="rest4" />
+				<ATTRIBUTE NAME="d1.type" VALUE="restaurant" />
+				<ATTRIBUTE NAME="d1.name" VALUE="o sacramento" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="17" SEQ="3416" STATUS="ok" AGREEMENT="no" ANNOTATOR="2"  SIZE1="7"  SIZE2="7" WORD-STRING ="o restaurante Aqui ha Peixe proximo Carioca da Trindade e tambem conhecer o restaurate Vitaminas Garret proximo a Farmacia Durao">
+			<ATTRIBUTE-SET1 TARGET.ID="rest1">
+				<ATTRIBUTE NAME="type" VALUE="restaurant" />
+				<ATTRIBUTE NAME="name" VALUE="aqui ha peixe" />
+				<ATTRIBUTE NAME="next-to" VALUE="pub1" />
+				<ATTRIBUTE NAME="d1.id" VALUE="pub1" />
+				<ATTRIBUTE NAME="d1.type" VALUE="pub" />
+				<ATTRIBUTE NAME="d1.name" VALUE="carioca da trindade" />
+			</ATTRIBUTE-SET1>
+			<ATTRIBUTE-SET2 TARGET.ID="rest2">
+				<ATTRIBUTE NAME="type" VALUE="restaurant" />
+				<ATTRIBUTE NAME="name" VALUE="vitaminas garret" />
+				<ATTRIBUTE NAME="next-to" VALUE="drug1" />
+				<ATTRIBUTE NAME="d1.id" VALUE="drug1" />
+				<ATTRIBUTE NAME="d1.type" VALUE="drugstore" />
+				<ATTRIBUTE NAME="d1.name" VALUE="durao" />
+			</ATTRIBUTE-SET2>
+		</CONTEXT>
+		<CONTEXT ID ="18" SEQ="3418" STATUS="ok" AGREEMENT="no" ANNOTATOR="1"  SIZE1="7"  SIZE2="7" WORD-STRING ="a Farmacia Internacional na Rua do Ouro e tambem a farmacia ao lado do Brown's Coffee Shop">
+			<ATTRIBUTE-SET1 TARGET.ID="drug2">
+				<ATTRIBUTE NAME="type" VALUE="drugstore" />
+				<ATTRIBUTE NAME="name" VALUE="internacional" />
+				<ATTRIBUTE NAME="in" VALUE="str11" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str11" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua do ouro" />
+			</ATTRIBUTE-SET1>
+			<ATTRIBUTE-SET2 TARGET.ID="drug3">
+				<ATTRIBUTE NAME="type" VALUE="drugstore" />
+				<ATTRIBUTE NAME="right-to" VALUE="cafe3" />
+				<ATTRIBUTE NAME="left-to" VALUE="cafe3" />
+				<ATTRIBUTE NAME="d1.id" VALUE="cafe3" />
+				<ATTRIBUTE NAME="d1.type" VALUE="cafe" />
+				<ATTRIBUTE NAME="d1.name" VALUE="browns coffee shop" />
+			</ATTRIBUTE-SET2>
+		</CONTEXT>
+		<CONTEXT ID ="19" SEQ="3420" STATUS="ok" AGREEMENT="no" ANNOTATOR="1"  SIZE1="7"  SIZE2="7" WORD-STRING ="a farmacia ao lado do Brown's Coffee Shop e a Farmacia Cortez na Rua de Sao Nicolau">
+			<ATTRIBUTE-SET1 TARGET.ID="drug3">
+				<ATTRIBUTE NAME="type" VALUE="drugstore" />
+				<ATTRIBUTE NAME="right-to" VALUE="cafe3" />
+				<ATTRIBUTE NAME="left-to" VALUE="cafe3" />
+				<ATTRIBUTE NAME="d1.id" VALUE="cafe3" />
+				<ATTRIBUTE NAME="d1.type" VALUE="cafe" />
+				<ATTRIBUTE NAME="d1.name" VALUE="browns coffee shop" />
+			</ATTRIBUTE-SET1>
+			<ATTRIBUTE-SET2 TARGET.ID="drug4">
+				<ATTRIBUTE NAME="type" VALUE="drugstore" />
+				<ATTRIBUTE NAME="name" VALUE="cortez" />
+				<ATTRIBUTE NAME="in" VALUE="str20" />
+				<ATTRIBUTE NAME="d1.id" VALUE="str20" />
+				<ATTRIBUTE NAME="d1.type" VALUE="street" />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua de sao nicolau" />
+			</ATTRIBUTE-SET2>
+		</CONTEXT>
+		<CONTEXT ID ="20" SEQ="3417" STATUS="ok" AGREEMENT="no" ANNOTATOR="1"  SIZE1="10"  SIZE2="0" WORD-STRING ="o restaurante O Sacramento ao lado do bar e proximo a igreja">
+			<ATTRIBUTE-SET1 TARGET.ID="rest4">
+				<ATTRIBUTE NAME="type" VALUE="restaurant" />
+				<ATTRIBUTE NAME="name" VALUE="o sacramento" />
+				<ATTRIBUTE NAME="right-to" VALUE="pub2" />
+				<ATTRIBUTE NAME="left-to" VALUE="pub2" />
+				<ATTRIBUTE NAME="next-to" VALUE="chur2" />
+				<ATTRIBUTE NAME="d1.id" VALUE="pub1" />
+				<ATTRIBUTE NAME="d1.type" VALUE="bar" />
+				<ATTRIBUTE NAME="d2.id" VALUE="chur2" />
+				<ATTRIBUTE NAME="d2.type" VALUE="church" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+</TRIAL>

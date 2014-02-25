@@ -1,0 +1,363 @@
+'''
+Created on 07/02/2014
+
+@author: thiagocastroferreira
+'''
+
+import itertools as iter
+
+def isUnderspecified(expressao, dominio):
+    target = expressao["caracteristicas"]["target"]
+    properties = expressao["descricao"][target]
+    
+    distractors = {}
+    for property in properties.keys():
+        distractors = {}
+        for element in properties[property]:
+            for object in dominio.keys():
+                if property in dominio[object].keys():
+                    if element in dominio[object][property]:
+                        distractors[object] = dominio[object]
+            dominio = distractors
+    
+    if len(distractors.keys()) > 1:
+        return True
+    return False
+    
+def isOverspecified(expressao, dominio):
+    target = expressao["caracteristicas"]["target"]
+    
+    properties = expressao["descricao"][target]
+    
+    permutations = iter.permutations(properties.keys())
+    
+    for permutation in permutations:
+        i = 0
+        for property in permutation:
+            i = i + 1
+            distractors = {}
+            for element in properties[property]:
+                for object in dominio.keys():
+                    if property in dominio[object].keys():
+                        if element in dominio[object][property]:
+                            distractors[object] = dominio[object]
+                dominio = distractors
+        
+            if len(distractors.keys()) == 1 and i < len(properties.keys()):
+                return True
+    return False
+
+def countAttributeFrequency(folds, teste):
+    foldsAux = {}
+    
+    for fold in folds:
+        if fold != teste:
+            foldsAux[fold] = folds[fold]
+            
+    frequency = {}
+    frequency["target"] = {}
+    frequency["landmark"] = {}
+    
+    for fold in foldsAux:
+        for anotacao in foldsAux[fold]:
+            target = "tg"
+            
+            for objeto in anotacao["descricao"]:
+                for key in anotacao["descricao"][objeto].keys():
+                    if objeto == target:
+                        if key in frequency["target"].keys():
+                            frequency["target"][key] = frequency["target"][key] + 1
+                        else:
+                            frequency["target"][key] = 1
+                    else:
+                        if key in frequency["landmark"].keys():
+                            frequency["landmark"][key] = frequency["landmark"][key] + 1
+                        else:
+                            frequency["landmark"][key] = 1
+    return frequency
+
+#contabiliza frequenca dos atributos por participante
+def countAttributeFrequencyIndividual(folds, teste):
+    foldsAux = {}
+    
+    for fold in folds:
+        if fold != teste:
+            foldsAux[fold] = folds[fold]
+            
+    frequency = {}
+    
+    for fold in foldsAux:
+        for participante in folds[fold]:
+            for anotacao in folds[fold][participante]:
+                target = anotacao["caracteristicas"]["target"]
+                
+                if participante not in frequency.keys():
+                    frequency[participante] = {}
+                    frequency[participante]["target"] = {}
+                    frequency[participante]["landmark"] = {}
+                
+                for objeto in anotacao["descricao"]:
+                    for key in anotacao["descricao"][objeto].keys():
+                        if objeto == target:
+                            if key in frequency[participante]["target"].keys():
+                                frequency[participante]["target"][key] = frequency[participante]["target"][key] + 1
+                            else:
+                                frequency[participante]["target"][key] = 1
+                        else:
+                            if key in frequency[participante]["landmark"].keys():
+                                frequency[participante]["landmark"][key] = frequency[participante]["landmark"][key] + 1
+                            else:
+                                frequency[participante]["landmark"][key] = 1
+    return frequency
+
+def defineExpressao(previsoes, dominio, target):
+    #descricao prevista pela svm
+    descricao = {}
+    
+    descricao[target] = {}
+    
+    for atributo in dominio[target].keys():
+        descricao[target][atributo] = dominio[target][atributo]
+    
+    relacional = False
+    landmark = str
+    second_landmark = ""
+    for atributo in ["type", "size", "colour", "hpos", "vpos", "relation", "lm_type", "lm_colour", "lm_hpos", "lm_vpos", "lm_size", "lm_relation", "lm2_type", "lm2_colour", "lm2_hpos", "lm2_vpos", "lm2_size"]:
+        element = atributo.split("_")
+        
+        if len(element) == 1 and atributo != "relation":
+            if previsoes[atributo] == 0:
+                if atributo in descricao[target].keys():
+                    del descricao[target][atributo]
+        
+        elif len(element) == 2 and relacional == True and element[1] != "relation":
+            if element[0] == "lm":
+                if previsoes[atributo] == 0:
+                    del descricao[landmark][element[1]]
+            else:
+                if previsoes[atributo] == 0:
+                    if second_landmark in descricao.keys():
+                        del descricao[second_landmark][element[1]]
+        
+        elif len(element) == 2 and relacional == True and element[1] == "relation":
+            if previsoes[atributo] == 0:
+                del descricao[landmark]["below"]
+                del descricao[landmark]["above"]
+                del descricao[landmark]["near"]
+                del descricao[landmark]["right"]
+                del descricao[landmark]["left"]
+                del descricao[landmark]["in-front-of"]
+            else:
+                if previsoes[atributo] == 1:
+                    del descricao[landmark]["below"]
+                    del descricao[landmark]["above"]
+                    del descricao[landmark]["right"]
+                    del descricao[landmark]["left"]
+                    del descricao[landmark]["in-front-of"]
+                    
+                    if len(descricao[landmark]["near"]) == 0:
+                        del descricao[landmark]["near"]
+                    else:
+                        second_landmark = descricao[landmark]["near"][0]
+                        descricao[second_landmark] = {}
+                        
+                        for key in dominio[second_landmark].keys():
+                            if key not in ["near", "left", "right", "below", "above", "in-front-of"]:
+                                descricao[second_landmark][key] = dominio[second_landmark][key]
+                
+                elif previsoes[atributo] == 2:
+                    del descricao[landmark]["above"]
+                    del descricao[landmark]["below"]
+                    del descricao[landmark]["near"]
+                    del descricao[landmark]["right"]
+                    del descricao[landmark]["in-front-of"]
+                    
+                    if len(descricao[landmark]["left"]) == 0:
+                        del descricao[landmark]["left"]
+                    else:
+                        second_landmark = descricao[landmark]["left"][0]
+                        descricao[second_landmark] = {}
+                        
+                        for key in dominio[second_landmark].keys():
+                            if key not in ["near", "left", "right", "below", "above", "in-front-of"]:
+                                descricao[second_landmark][key] = dominio[second_landmark][key]
+                
+                elif previsoes[atributo] == 3:
+                    del descricao[landmark]["below"]
+                    del descricao[landmark]["near"]
+                    del descricao[landmark]["right"]
+                    del descricao[landmark]["left"]
+                    del descricao[landmark]["in-front-of"]
+                    
+                    if len(descricao[landmark]["above"]) == 0:
+                        del descricao[landmark]["above"]
+                    else:
+                        second_landmark = descricao[landmark]["above"][0]
+                        descricao[second_landmark] = {}
+                        
+                        for key in dominio[second_landmark].keys():
+                            if key not in ["near", "left", "right", "below", "above", "in-front-of"]:
+                                descricao[second_landmark][key] = dominio[second_landmark][key]
+                
+                elif previsoes[atributo] == 4:
+                    del descricao[landmark]["above"]
+                    del descricao[landmark]["below"]
+                    del descricao[landmark]["near"]
+                    del descricao[landmark]["left"]
+                    del descricao[landmark]["in-front-of"]
+                    
+                    if len(descricao[landmark]["right"]) == 0:
+                        del descricao[landmark]["right"]
+                    else:
+                        second_landmark = descricao[landmark]["right"][0]
+                        descricao[second_landmark] = {}
+                        
+                        for key in dominio[second_landmark].keys():
+                            if key not in ["near", "left", "right", "below", "above", "in-front-of"]:
+                                descricao[second_landmark][key] = dominio[second_landmark][key]
+                
+                elif previsoes[atributo] == 5:
+                    del descricao[landmark]["above"]
+                    del descricao[landmark]["near"]
+                    del descricao[landmark]["right"]
+                    del descricao[landmark]["left"]
+                    del descricao[landmark]["in-front-of"]
+                    
+                    if len(descricao[landmark]["below"]) == 0:
+                        del descricao[landmark]["below"]
+                    else:
+                        second_landmark = descricao[landmark]["below"][0]
+                        descricao[second_landmark] = {}
+                        
+                        for key in dominio[second_landmark].keys():
+                            if key not in ["near", "left", "right", "below", "above", "in-front-of"]:
+                                descricao[second_landmark][key] = dominio[second_landmark][key]
+                
+                elif previsoes[atributo] == 6:
+                    del descricao[landmark]["above"]
+                    del descricao[landmark]["near"]
+                    del descricao[landmark]["right"]
+                    del descricao[landmark]["left"]
+                    del descricao[landmark]["below"]
+                    
+                    if len(descricao[landmark]["in-front-of"]) == 0:
+                        del descricao[landmark]["in-front-of"]
+                    else:
+                        second_landmark = descricao[landmark]["in-front-of"][0]
+                        descricao[second_landmark] = {}
+                        
+                        for key in dominio[second_landmark].keys():
+                            if key not in ["near", "left", "right", "below", "above", "in-front-of"]:
+                                descricao[second_landmark][key] = dominio[second_landmark][key]
+        
+        elif len(element) == 1 and atributo == "relation":
+            if previsoes[atributo] == 0:
+                del descricao[target]["below"]
+                del descricao[target]["above"]
+                del descricao[target]["near"]
+                del descricao[target]["right"]
+                del descricao[target]["left"]
+                del descricao[target]["in-front-of"]
+            else:
+                if previsoes[atributo] == 1:
+                    del descricao[target]["below"]
+                    del descricao[target]["above"]
+                    del descricao[target]["right"]
+                    del descricao[target]["left"]
+                    del descricao[target]["in-front-of"]
+                    
+                    if len(descricao[target]["near"]) == 0:
+                        del descricao[target]["near"]
+                    else:
+                        landmark = descricao[target]["near"][0]
+                        descricao[landmark] = {}
+                        relacional = True
+                        
+                        for key in dominio[landmark].keys():
+                            descricao[landmark][key] = dominio[landmark][key]
+                
+                elif previsoes[atributo] == 2:
+                    del descricao[target]["above"]
+                    del descricao[target]["below"]
+                    del descricao[target]["near"]
+                    del descricao[target]["right"]
+                    del descricao[target]["in-front-of"]
+                    
+                    if len(descricao[target]["left"]) == 0:
+                        del descricao[target]["left"]
+                    else:
+                        landmark = descricao[target]["left"][0]
+                        descricao[landmark] = {}
+                        relacional = True
+                        
+                        for key in dominio[landmark].keys():
+                            descricao[landmark][key] = dominio[landmark][key]
+                
+                elif previsoes[atributo] == 3:
+                    del descricao[target]["below"]
+                    del descricao[target]["near"]
+                    del descricao[target]["right"]
+                    del descricao[target]["left"]
+                    del descricao[target]["in-front-of"]
+                    
+                    if len(descricao[target]["above"]) == 0:
+                        del descricao[target]["above"]
+                    else:
+                        landmark = descricao[target]["above"][0]
+                        descricao[landmark] = {}
+                        relacional = True
+                        
+                        for key in dominio[landmark].keys():
+                            descricao[landmark][key] = dominio[landmark][key]
+                
+                elif previsoes[atributo] == 4:
+                    del descricao[target]["above"]
+                    del descricao[target]["below"]
+                    del descricao[target]["near"]
+                    del descricao[target]["left"]
+                    del descricao[target]["in-front-of"]
+                    
+                    if len(descricao[target]["right"]) == 0:
+                        del descricao[target]["right"]
+                    else:
+                        landmark = descricao[target]["right"][0]
+                        descricao[landmark] = {}
+                        relacional = True
+                        
+                        for key in dominio[landmark].keys():
+                            descricao[landmark][key] = dominio[landmark][key]
+                
+                elif previsoes[atributo] == 5:
+                    del descricao[target]["above"]
+                    del descricao[target]["near"]
+                    del descricao[target]["right"]
+                    del descricao[target]["left"]
+                    del descricao[target]["in-front-of"]
+                    
+                    if len(descricao[target]["below"]) == 0:
+                        del descricao[target]["below"]
+                    else:
+                        landmark = descricao[target]["below"][0]
+                        descricao[landmark] = {}
+                        relacional = True
+                        
+                        for key in dominio[landmark].keys():
+                            descricao[landmark][key] = dominio[landmark][key]
+                            
+                elif previsoes[atributo] == 6:
+                    del descricao[target]["above"]
+                    del descricao[target]["near"]
+                    del descricao[target]["right"]
+                    del descricao[target]["left"]
+                    del descricao[target]["below"]
+                    
+                    if len(descricao[target]["in-front-of"]) == 0:
+                        del descricao[target]["in-front-of"]
+                    else:
+                        landmark = descricao[target]["in-front-of"][0]
+                        descricao[landmark] = {}
+                        relacional = True
+                        
+                        for key in dominio[landmark].keys():
+                            descricao[landmark][key] = dominio[landmark][key]
+    return descricao

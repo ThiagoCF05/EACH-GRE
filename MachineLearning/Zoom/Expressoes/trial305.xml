@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+	<TRIAL ID="305" AGE="22" GENDER="f" DURATION="23">
+		<CONTEXT ID ="1" SEQ="1645" STATUS="ok" AGREEMENT="no" ANNOTATOR="1"  SIZE1="2"  SIZE2="0" WORD-STRING ="Que comer aquela comida caseira da mamae? Esse restaurante e uma otima opcao pra isso!">
+			<ATTRIBUTE-SET1 TARGET.ID="rest3">
+				<ATTRIBUTE NAME="type" VALUE="restaurant" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="2" SEQ="1642" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="3"  SIZE2="0" WORD-STRING ="Antes de ir para aquele teatro que havia comentado vale dar uma passada para apreciar o cafe Aurora.">
+			<ATTRIBUTE-SET1 TARGET.ID="cafe1">
+				<ATTRIBUTE NAME="type" VALUE="cafe" />
+				<ATTRIBUTE NAME="name" VALUE="aurora" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="3" SEQ="1643" STATUS="ok" AGREEMENT="no" ANNOTATOR="2"  SIZE1="2"  SIZE2="0" WORD-STRING ="Em um lugar de muito movimento a farmacia do chico nao tem hora que fiquei vazia. Os precos sao acessiveis e ha remedio pra tudo quanto e problema..rs">
+			<ATTRIBUTE-SET1 TARGET.ID="drug3">
+				<ATTRIBUTE NAME="type" VALUE="drugstore" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="4" SEQ="1644" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="2"  SIZE2="0" WORD-STRING ="Nao frequento igrejas, mas essa vale pela decoracao em seu interior!">
+			<ATTRIBUTE-SET1 TARGET.ID="chur3">
+				<ATTRIBUTE NAME="type" VALUE="church" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="5" SEQ="1641" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="2"  SIZE2="0" WORD-STRING ="Nao gosto de pubs, embora tenho boas referencias deste. Dizem que a comida e barata e que nao passam so futebol na tv.">
+			<ATTRIBUTE-SET1 TARGET.ID="pub1">
+				<ATTRIBUTE NAME="type" VALUE="pub" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="6" SEQ="1650" STATUS="ok" AGREEMENT="no" ANNOTATOR="1"  SIZE1="2"  SIZE2="0" WORD-STRING ="A Igreja maior tem uma arquitetura diferente da primeira que eu havia mencionado. e mais estilo moderno, sem reintrancias e exuberancia escondida nos detalhes">
+			<ATTRIBUTE-SET1 TARGET.ID="chur2">
+				<ATTRIBUTE NAME="type" VALUE="church" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="7" SEQ="1647" STATUS="ok" AGREEMENT="no" ANNOTATOR="1"  SIZE1="2"  SIZE2="0" WORD-STRING ="Para frutos do mar, va no Aqui ha peixe. So cuidado com o polvo! como diz o nome do restaurante, ali so tem peixe, entao o polvo e uma ma pedida pro local.">
+			<ATTRIBUTE-SET1 TARGET.ID="rest1">
+				<ATTRIBUTE NAME="name" VALUE="aqui ha peixe" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="9" SEQ="1649" STATUS="ok" AGREEMENT="no" ANNOTATOR="1"  SIZE1="3"  SIZE2="3" WORD-STRING ="Sao concorrentes assiduas, a farmacia Cortez serve uma clientela mais requintada, enquanto a do Seu Chico e mais para o povao">
+			<ATTRIBUTE-SET1 TARGET.ID="drug4">
+				<ATTRIBUTE NAME="type" VALUE="drugstore" />
+				<ATTRIBUTE NAME="name" VALUE="cortez" />
+			</ATTRIBUTE-SET1>
+			<ATTRIBUTE-SET2 TARGET.ID="drug3">
+				<ATTRIBUTE NAME="type" VALUE="drugstore" />
+				<ATTRIBUTE NAME="name" VALUE="other" />
+			</ATTRIBUTE-SET2>
+		</CONTEXT>
+		<CONTEXT ID ="10" SEQ="1646" STATUS="ok" AGREEMENT="no" ANNOTATOR="1"  SIZE1="2"  SIZE2="6" WORD-STRING ="Ja uma comida sofisticada, indico o Taberna do Chiado.">
+			<ATTRIBUTE-SET1 TARGET.ID="rest5">
+				<ATTRIBUTE NAME="name" VALUE="taberna do chiado" />
+			</ATTRIBUTE-SET1>
+			<ATTRIBUTE-SET2 TARGET.ID="NULL">
+				<ATTRIBUTE NAME="d1.id" VALUE="str10"
+									 />
+				<ATTRIBUTE NAME="d1.type" VALUE="street"
+									 />
+				<ATTRIBUTE NAME="d1.name" VALUE="rua nova do almada"
+									 />
+				<ATTRIBUTE NAME="d2.id" VALUE="str9"
+									 />
+				<ATTRIBUTE NAME="d2.type" VALUE="street"
+									 />
+				<ATTRIBUTE NAME="d2.name" VALUE="rua ivens"
+									 />
+			</ATTRIBUTE-SET2>
+		</CONTEXT>
+		<CONTEXT ID ="13" SEQ="1653" STATUS="ok" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="6"  SIZE2="0" WORD-STRING ="Nada mais justo que um restaurante perto d euma igreja chamado sacramento. Vale ir la conhecer. a Comida e feita pelos monges locais e muito saborosa.">
+			<ATTRIBUTE-SET1 TARGET.ID="rest4">
+				<ATTRIBUTE NAME="type" VALUE="restaurant" />
+				<ATTRIBUTE NAME="name" VALUE="o sacramento" />
+				<ATTRIBUTE NAME="next-to" VALUE="chur2" />
+				<ATTRIBUTE NAME="d1.id" VALUE="chur2" />
+				<ATTRIBUTE NAME="d1.type" VALUE="church" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="14" SEQ="1654" STATUS="ok" AGREEMENT="no" ANNOTATOR="1"  SIZE1="2"  SIZE2="0" WORD-STRING ="Ja comentei da arquitetura dessa igreja...">
+			<ATTRIBUTE-SET1 TARGET.ID="chur3">
+				<ATTRIBUTE NAME="type" VALUE="church" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="15" SEQ="1651" STATUS="edited" AGREEMENT="yes" ANNOTATOR="1"  SIZE1="2"  SIZE2="0" WORD-STRING ="Esse pub tem mais cara de boteco do que outra coisa. Nao sei porque esta classificado como pub">
+			<ATTRIBUTE-SET1 TARGET.ID="pub1">
+				<ATTRIBUTE NAME="type" VALUE="pub" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+		<CONTEXT ID ="17" SEQ="1657" STATUS="ok" AGREEMENT="no" ANNOTATOR="1"  SIZE1="2"  SIZE2="0" WORD-STRING ="Vitaminas garret e um otimo local para uma paradinha depois do passeio de bike.">
+			<ATTRIBUTE-SET1 TARGET.ID="rest2">
+				<ATTRIBUTE NAME="name" VALUE="vitaminas garret" />
+			</ATTRIBUTE-SET1>
+		</CONTEXT>
+</TRIAL>

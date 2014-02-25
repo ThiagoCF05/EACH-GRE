@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<TRIAL ID="52" SPEAKER="52" AGE="19" GENDER="m">
+
+  <CONTEXT ID="abs1">
+    <ATTRIBUTE-SET TARGET="e2" LANDMARK="q2" STRING=" estrela à  esquerda e mais próxima do quadrado no canto leste da tela " LENGTH="7" OVERSPEC="4">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="hpos" VALUE="right" />
+      <ATTRIBUTE NAME="near" VALUE="q2" />
+      <ATTRIBUTE NAME="left" VALUE="q2" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="abs3">
+    <ATTRIBUTE-SET TARGET="e2" LANDMARK="q1" STRING=" mais próxima de um quadrado branco " LENGTH="6" OVERSPEC="3">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="near" VALUE="q1" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="abs5">
+    <ATTRIBUTE-SET TARGET="e3" LANDMARK="q6" STRING=" a mais próxima de um quadrado branco" LENGTH="6" OVERSPEC="3">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="near" VALUE="q6" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="fill1">
+    <ATTRIBUTE-SET TARGET="e1" LANDMARK="c3" SECOND-LANDMARK="c3" STRING=" estela mais próxima do círculo vermelho " LENGTH="6" OVERSPEC="2">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+      <ATTRIBUTE NAME="second-landmark-colour" VALUE="red" />
+      <ATTRIBUTE NAME="landmark-near" VALUE="c3" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="fill2">
+    <ATTRIBUTE-SET TARGET="e1" LANDMARK="q3" STRING=" mais próxima de um quadrado vermelho " LENGTH="6" OVERSPEC="4">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="red" />
+      <ATTRIBUTE NAME="near" VALUE="q3" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="fill3">
+    <ATTRIBUTE-SET TARGET="e2" LANDMARK="q6" STRING="é a mais próxima de um quadrado branco " LENGTH="6" OVERSPEC="1">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="near" VALUE="q6" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="fill4">
+    <ATTRIBUTE-SET TARGET="e5" LANDMARK="q1" STRING="é a mais próxima de um quadrado branco " LENGTH="6" OVERSPEC="1">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="near" VALUE="q1" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="fill5">
+    <ATTRIBUTE-SET TARGET="e5" LANDMARK="q2" SECOND-LANDMARK="c2" STRING="é a mais próxima de um quadrado branco e um circulo branco simultaneamente" LENGTH="9" OVERSPEC="2">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="second-landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="near" VALUE="q2" />
+      <ATTRIBUTE NAME="landmark-near" VALUE="c2" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="proj1">
+    <ATTRIBUTE-SET TARGET="e2" LANDMARK="q1" STRING=" estrela à  direita e mais próxima do quadrado no canto oeste da tela " LENGTH="7" OVERSPEC="4">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="hpos" VALUE="left" />
+      <ATTRIBUTE NAME="near" VALUE="q1" />
+      <ATTRIBUTE NAME="right" VALUE="q1" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="proj3">
+    <ATTRIBUTE-SET TARGET="e4" LANDMARK="q4" STRING=" mais próxima de um quadrado " LENGTH="5" OVERSPEC="2">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="near" VALUE="q4" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="proj5">
+    <ATTRIBUTE-SET TARGET="e2" LANDMARK="q6" STRING=" menos afastada de um quadrado " LENGTH="5" OVERSPEC="2">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="near" VALUE="q6" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+</TRIAL>

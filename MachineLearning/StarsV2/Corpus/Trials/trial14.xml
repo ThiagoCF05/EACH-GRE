@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<TRIAL ID="14" SPEAKER="14" AGE="20" GENDER="m">
+
+  <CONTEXT ID="abs1">
+    <ATTRIBUTE-SET TARGET="e2" LANDMARK="q2" STRING=" estrela no lado direito, próximo ao quadrado branco. " LENGTH="7" OVERSPEC="4">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="hpos" VALUE="right" />
+      <ATTRIBUTE NAME="near" VALUE="q2" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="abs3">
+    <ATTRIBUTE-SET TARGET="e2" LANDMARK="q1" STRING=" estrela no lado esquerdo, próxima ao quadrado branco. " LENGTH="7" OVERSPEC="4">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="hpos" VALUE="left" />
+      <ATTRIBUTE NAME="near" VALUE="q1" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="abs5">
+    <ATTRIBUTE-SET TARGET="e3" LANDMARK="q6" STRING=" estrela no lado direito, próxima ao quadrado branco." LENGTH="7" OVERSPEC="4">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="hpos" VALUE="right" />
+      <ATTRIBUTE NAME="near" VALUE="q6" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="fill1">
+    <ATTRIBUTE-SET TARGET="e1" LANDMARK="q1" STRING="é a estrela branca no canto esquerdo, à direita do quadrado. " LENGTH="7" OVERSPEC="3">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="colour" VALUE="white" />
+      <ATTRIBUTE NAME="hpos" VALUE="left" />
+      <ATTRIBUTE NAME="right" VALUE="q1" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="fill2">
+    <ATTRIBUTE-SET TARGET="e1" LANDMARK="q3" STRING=" estrela no canto esquerdo, próxima ao quadrado vermelho. " LENGTH="7" OVERSPEC="5">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="red" />
+      <ATTRIBUTE NAME="hpos" VALUE="left" />
+      <ATTRIBUTE NAME="near" VALUE="q3" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="fill3">
+    <ATTRIBUTE-SET TARGET="e2" LANDMARK="q6" STRING=" estrela no canto direito que está à esquerda do quadrado branco. " LENGTH="7" OVERSPEC="2">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="hpos" VALUE="right" />
+      <ATTRIBUTE NAME="left" VALUE="q6" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="fill4">
+    <ATTRIBUTE-SET TARGET="e5" LANDMARK="q1" SECOND-LANDMARK="c2" STRING=" estrela no lado direito, próximo ao quadrado branco e ao círculo branco. " LENGTH="10" OVERSPEC="5">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="second-landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="hpos" VALUE="right" />
+      <ATTRIBUTE NAME="near" VALUE="q1" />
+      <ATTRIBUTE NAME="landmark-near" VALUE="c2" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="fill5">
+    <ATTRIBUTE-SET TARGET="e5" LANDMARK="q2" SECOND-LANDMARK="c2" STRING=" estrela no lado esquerdo, próxima ao quadrado e próxima ao círculo" LENGTH="8" OVERSPEC="1">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+      <ATTRIBUTE NAME="hpos" VALUE="left" />
+      <ATTRIBUTE NAME="near" VALUE="q2" />
+      <ATTRIBUTE NAME="landmark-near" VALUE="c2" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="proj1">
+    <ATTRIBUTE-SET TARGET="e2" LANDMARK="q1" STRING=" estrela no canto esquerdo que está à direita do quadrado branco. " LENGTH="7" OVERSPEC="4">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="hpos" VALUE="left" />
+      <ATTRIBUTE NAME="right" VALUE="q1" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="proj3">
+    <ATTRIBUTE-SET TARGET="e4" LANDMARK="q4" STRING=" estrela no canto direito, à esquerda do quadrado branco. " LENGTH="7" OVERSPEC="4">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="hpos" VALUE="right" />
+      <ATTRIBUTE NAME="left" VALUE="q4" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+  <CONTEXT ID="proj5">
+    <ATTRIBUTE-SET TARGET="e2" LANDMARK="q6" STRING=" estrela no lado direito, próxima ao quadrado branco. " LENGTH="7" OVERSPEC="4">
+      <ATTRIBUTE NAME="type" VALUE="star" />
+      <ATTRIBUTE NAME="landmark-type" VALUE="box" />
+      <ATTRIBUTE NAME="landmark-colour" VALUE="white" />
+      <ATTRIBUTE NAME="hpos" VALUE="right" />
+      <ATTRIBUTE NAME="near" VALUE="q6" />
+    </ATTRIBUTE-SET>
+  </CONTEXT>
+
+</TRIAL>

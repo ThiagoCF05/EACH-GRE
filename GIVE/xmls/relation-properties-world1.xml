@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RELATIONAL-PROPERTIES>
+
+	<DOMAIN ID="room-1">
+		<RELATION TARGET="d1" LANDMARK="b3">
+			<ATTRIBUTE NAME="position" VALUE="left" />
+			<ATTRIBUTE NAME="distance" VALUE="1.2" />
+		</RELATION>
+		<RELATION TARGET="d1" LANDMARK="b3">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.2" />
+		</RELATION>
+		<RELATION TARGET="d2" LANDMARK="a2">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.12" />
+		</RELATION>
+		<RELATION TARGET="d2" LANDMARK="p1">
+			<ATTRIBUTE NAME="position" VALUE="left" />
+			<ATTRIBUTE NAME="distance" VALUE="1" />
+		</RELATION>
+		<RELATION TARGET="d2" LANDMARK="p1">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1" />
+		</RELATION>
+		<RELATION TARGET="d2" LANDMARK="s1">
+			<ATTRIBUTE NAME="position" VALUE="left" />
+			<ATTRIBUTE NAME="distance" VALUE="1" />
+		</RELATION>
+		<RELATION TARGET="d2" LANDMARK="s1">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1" />
+		</RELATION>
+		<RELATION TARGET="d2" LANDMARK="t1">
+			<ATTRIBUTE NAME="position" VALUE="left" />
+			<ATTRIBUTE NAME="distance" VALUE="1" />
+		</RELATION>
+		<RELATION TARGET="d2" LANDMARK="t1">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1" />
+		</RELATION>
+		<RELATION TARGET="d4" LANDMARK="a1">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.12" />
+		</RELATION>
+		<RELATION TARGET="d4" LANDMARK="p1">
+			<ATTRIBUTE NAME="position" VALUE="right" />
+			<ATTRIBUTE NAME="distance" VALUE="1" />
+		</RELATION>
+		<RELATION TARGET="d4" LANDMARK="p1">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1" />
+		</RELATION>
+		<RELATION TARGET="d4" LANDMARK="s1">
+			<ATTRIBUTE NAME="position" VALUE="right" />
+			<ATTRIBUTE NAME="distance" VALUE="1" />
+		</RELATION>
+		<RELATION TARGET="d4" LANDMARK="s1">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1" />
+		</RELATION>
+		<RELATION TARGET="d4" LANDMARK="t1">
+			<ATTRIBUTE NAME="position" VALUE="right" />
+			<ATTRIBUTE NAME="distance" VALUE="1" />
+		</RELATION>
+		<RELATION TARGET="d4" LANDMARK="t1">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1" />
+		</RELATION>
+		<RELATION TARGET="d4" LANDMARK="b10">
+			<ATTRIBUTE NAME="position" VALUE="slightlyleft" />
+			<ATTRIBUTE NAME="distance" VALUE="0.71" />
+		</RELATION>
+		<RELATION TARGET="d4" LANDMARK="b10">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="0.71" />
+		</RELATION>
+		<RELATION TARGET="a1" LANDMARK="d4">
+			<ATTRIBUTE NAME="position" VALUE="straight" />
+			<ATTRIBUTE NAME="distance" VALUE="1.12" />
+		</RELATION>
+		<RELATION TARGET="a1" LANDMARK="d4">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.12" />
+		</RELATION>
+		<RELATION TARGET="a1" LANDMARK="p1">
+			<ATTRIBUTE NAME="position" VALUE="slightlyright" />
+			<ATTRIBUTE NAME="distance" VALUE="1.57" />
+		</RELATION>
+		<RELATION TARGET="a1" LANDMARK="p1">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.57" />
+		</RELATION>
+		<RELATION TARGET="a1" LANDMARK="s1">
+			<ATTRIBUTE NAME="position" VALUE="slightlyright" />
+			<ATTRIBUTE NAME="distance" VALUE="1.5" />
+		</RELATION>
+		<RELATION TARGET="a1" LANDMARK="s1">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.5" />
+		</RELATION>
+		<RELATION TARGET="a1" LANDMARK="t1">
+			<ATTRIBUTE NAME="position" VALUE="slightlyright" />
+			<ATTRIBUTE NAME="distance" VALUE="1.57" />
+		</RELATION>
+		<RELATION TARGET="a1" LANDMARK="t1">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.57" />
+		</RELATION>
+		<RELATION TARGET="a1" LANDMARK="b10">
+			<ATTRIBUTE NAME="position" VALUE="straight" />
+			<ATTRIBUTE NAME="distance" VALUE="1.03" />
+		</RELATION>
+		<RELATION TARGET="a1" LANDMARK="b10">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.03" />
+		</RELATION>
+		<RELATION TARGET="a2" LANDMARK="d2">
+			<ATTRIBUTE NAME="position" VALUE="straight" />
+			<ATTRIBUTE NAME="distance" VALUE="1.12" />
+		</RELATION>
+		<RELATION TARGET="a2" LANDMARK="d2">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.12" />
+		</RELATION>
+		<RELATION TARGET="a2" LANDMARK="p1">
+			<ATTRIBUTE NAME="position" VALUE="leftaround" />
+			<ATTRIBUTE NAME="distance" VALUE="1.57" />
+		</RELATION>
+		<RELATION TARGET="a2" LANDMARK="p1">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.57" />
+		</RELATION>
+		<RELATION TARGET="a2" LANDMARK="s1">
+			<ATTRIBUTE NAME="position" VALUE="leftaround" />
+			<ATTRIBUTE NAME="distance" VALUE="1.5" />
+		</RELATION>
+		<RELATION TARGET="a2" LANDMARK="s1">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.5" />
+		</RELATION>
+		<RELATION TARGET="a2" LANDMARK="t1">
+			<ATTRIBUTE NAME="position" VALUE="leftaround" />
+			<ATTRIBUTE NAME="distance" VALUE="1.57" />
+		</RELATION>
+		<RELATION TARGET="a2" LANDMARK="t1">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.57" />
+		</RELATION>
+		<RELATION TARGET="p1" LANDMARK="d2">
+			<ATTRIBUTE NAME="position" VALUE="right" />
+			<ATTRIBUTE NAME="distance" VALUE="1" />
+		</RELATION>
+		<RELATION TARGET="p1" LANDMARK="d2">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1" />
+		</RELATION>
+		<RELATION TARGET="p1" LANDMARK="d4">
+			<ATTRIBUTE NAME="position" VALUE="left" />
+			<ATTRIBUTE NAME="distance" VALUE="1" />
+		</RELATION>
+		<RELATION TARGET="p1" LANDMARK="d4">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1" />
+		</RELATION>
+		<RELATION TARGET="p1" LANDMARK="a1">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.57" />
+		</RELATION>
+		<RELATION TARGET="p1" LANDMARK="a2">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.57" />
+		</RELATION>
+		<RELATION TARGET="p1" LANDMARK="s1">
+			<ATTRIBUTE NAME="position" VALUE="straight" />
+			<ATTRIBUTE NAME="distance" VALUE="0.1" />
+		</RELATION>
+		<RELATION TARGET="p1" LANDMARK="s1">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="0.1" />
+		</RELATION>
+		<RELATION TARGET="p1" LANDMARK="t1">
+			<ATTRIBUTE NAME="position" VALUE="straight" />
+			<ATTRIBUTE NAME="distance" VALUE="0" />
+		</RELATION>
+		<RELATION TARGET="p1" LANDMARK="t1">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="0" />
+		</RELATION>
+		<RELATION TARGET="s1" LANDMARK="d2">
+			<ATTRIBUTE NAME="position" VALUE="right" />
+			<ATTRIBUTE NAME="distance" VALUE="1" />
+		</RELATION>
+		<RELATION TARGET="s1" LANDMARK="d2">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1" />
+		</RELATION>
+		<RELATION TARGET="s1" LANDMARK="d4">
+			<ATTRIBUTE NAME="position" VALUE="left" />
+			<ATTRIBUTE NAME="distance" VALUE="1" />
+		</RELATION>
+		<RELATION TARGET="s1" LANDMARK="d4">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1" />
+		</RELATION>
+		<RELATION TARGET="s1" LANDMARK="a1">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.5" />
+		</RELATION>
+		<RELATION TARGET="s1" LANDMARK="a2">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.5" />
+		</RELATION>
+		<RELATION TARGET="s1" LANDMARK="p1">
+			<ATTRIBUTE NAME="position" VALUE="straight" />
+			<ATTRIBUTE NAME="distance" VALUE="0.1" />
+		</RELATION>
+		<RELATION TARGET="s1" LANDMARK="p1">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="0.1" />
+		</RELATION>
+		<RELATION TARGET="s1" LANDMARK="t1">
+			<ATTRIBUTE NAME="position" VALUE="straight" />
+			<ATTRIBUTE NAME="distance" VALUE="0.1" />
+		</RELATION>
+		<RELATION TARGET="s1" LANDMARK="t1">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="0.1" />
+		</RELATION>
+		<RELATION TARGET="t1" LANDMARK="d2">
+			<ATTRIBUTE NAME="position" VALUE="right" />
+			<ATTRIBUTE NAME="distance" VALUE="1" />
+		</RELATION>
+		<RELATION TARGET="t1" LANDMARK="d2">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1" />
+		</RELATION>
+		<RELATION TARGET="t1" LANDMARK="d4">
+			<ATTRIBUTE NAME="position" VALUE="left" />
+			<ATTRIBUTE NAME="distance" VALUE="1" />
+		</RELATION>
+		<RELATION TARGET="t1" LANDMARK="d4">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1" />
+		</RELATION>
+		<RELATION TARGET="t1" LANDMARK="a1">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.57" />
+		</RELATION>
+		<RELATION TARGET="t1" LANDMARK="a2">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.57" />
+		</RELATION>
+		<RELATION TARGET="t1" LANDMARK="p1">
+			<ATTRIBUTE NAME="position" VALUE="straight" />
+			<ATTRIBUTE NAME="distance" VALUE="0" />
+		</RELATION>
+		<RELATION TARGET="t1" LANDMARK="p1">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="0" />
+		</RELATION>
+		<RELATION TARGET="t1" LANDMARK="s1">
+			<ATTRIBUTE NAME="position" VALUE="straight" />
+			<ATTRIBUTE NAME="distance" VALUE="0.1" />
+		</RELATION>
+		<RELATION TARGET="t1" LANDMARK="s1">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="0.1" />
+		</RELATION>
+		<RELATION TARGET="b3" LANDMARK="d1">
+			<ATTRIBUTE NAME="position" VALUE="right" />
+			<ATTRIBUTE NAME="distance" VALUE="1.2" />
+		</RELATION>
+		<RELATION TARGET="b3" LANDMARK="d1">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.2" />
+		</RELATION>
+		<RELATION TARGET="b3" LANDMARK="b4">
+			<ATTRIBUTE NAME="position" VALUE="left" />
+			<ATTRIBUTE NAME="distance" VALUE="0.7" />
+		</RELATION>
+		<RELATION TARGET="b3" LANDMARK="b4">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="0.7" />
+		</RELATION>
+		<RELATION TARGET="b4" LANDMARK="b3">
+			<ATTRIBUTE NAME="position" VALUE="right" />
+			<ATTRIBUTE NAME="distance" VALUE="0.7" />
+		</RELATION>
+		<RELATION TARGET="b4" LANDMARK="b3">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="0.7" />
+		</RELATION>
+		<RELATION TARGET="b10" LANDMARK="d4">
+			<ATTRIBUTE NAME="position" VALUE="slightlyright" />
+			<ATTRIBUTE NAME="distance" VALUE="0.71" />
+		</RELATION>
+		<RELATION TARGET="b10" LANDMARK="d4">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="0.71" />
+		</RELATION>
+		<RELATION TARGET="b10" LANDMARK="a1">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.03" />
+		</RELATION>
+	</DOMAIN>
+
+	<DOMAIN ID="room-8">
+		<RELATION TARGET="chair1" LANDMARK="b13">
+			<ATTRIBUTE NAME="position" VALUE="slightlyleft" />
+			<ATTRIBUTE NAME="distance" VALUE="1.47" />
+		</RELATION>
+		<RELATION TARGET="chair1" LANDMARK="b13">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.47" />
+		</RELATION>
+		<RELATION TARGET="chair1" LANDMARK="b12">
+			<ATTRIBUTE NAME="position" VALUE="straight" />
+			<ATTRIBUTE NAME="distance" VALUE="1.24" />
+		</RELATION>
+		<RELATION TARGET="chair1" LANDMARK="b12">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.24" />
+		</RELATION>
+		<RELATION TARGET="b13" LANDMARK="chair1">
+			<ATTRIBUTE NAME="position" VALUE="slightlyleft" />
+			<ATTRIBUTE NAME="distance" VALUE="1.47" />
+		</RELATION>
+		<RELATION TARGET="b13" LANDMARK="chair1">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.47" />
+		</RELATION>
+		<RELATION TARGET="b12" LANDMARK="chair1">
+			<ATTRIBUTE NAME="position" VALUE="straight" />
+			<ATTRIBUTE NAME="distance" VALUE="1.24" />
+		</RELATION>
+		<RELATION TARGET="b12" LANDMARK="chair1">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.24" />
+		</RELATION>
+	</DOMAIN>
+
+	<DOMAIN ID="room-7">
+		<RELATION TARGET="d10" LANDMARK="b15">
+			<ATTRIBUTE NAME="position" VALUE="right" />
+			<ATTRIBUTE NAME="distance" VALUE="0.9" />
+		</RELATION>
+		<RELATION TARGET="d10" LANDMARK="b15">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="0.9" />
+		</RELATION>
+		<RELATION TARGET="lamp1" LANDMARK="b17">
+			<ATTRIBUTE NAME="position" VALUE="slightlyright" />
+			<ATTRIBUTE NAME="distance" VALUE="1.24" />
+		</RELATION>
+		<RELATION TARGET="lamp1" LANDMARK="b17">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.24" />
+		</RELATION>
+		<RELATION TARGET="lamp1" LANDMARK="b18">
+			<ATTRIBUTE NAME="position" VALUE="slightlyright" />
+			<ATTRIBUTE NAME="distance" VALUE="1.58" />
+		</RELATION>
+		<RELATION TARGET="lamp1" LANDMARK="b18">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.58" />
+		</RELATION>
+		<RELATION TARGET="b15" LANDMARK="d10">
+			<ATTRIBUTE NAME="position" VALUE="left" />
+			<ATTRIBUTE NAME="distance" VALUE="0.9" />
+		</RELATION>
+		<RELATION TARGET="b15" LANDMARK="d10">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="0.9" />
+		</RELATION>
+		<RELATION TARGET="b17" LANDMARK="lamp1">
+			<ATTRIBUTE NAME="position" VALUE="slightlyleft" />
+			<ATTRIBUTE NAME="distance" VALUE="1.24" />
+		</RELATION>
+		<RELATION TARGET="b17" LANDMARK="lamp1">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.24" />
+		</RELATION>
+		<RELATION TARGET="b17" LANDMARK="b18">
+			<ATTRIBUTE NAME="position" VALUE="right" />
+			<ATTRIBUTE NAME="distance" VALUE="0.5" />
+		</RELATION>
+		<RELATION TARGET="b17" LANDMARK="b18">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="0.5" />
+		</RELATION>
+		<RELATION TARGET="b18" LANDMARK="lamp1">
+			<ATTRIBUTE NAME="position" VALUE="slightlyleft" />
+			<ATTRIBUTE NAME="distance" VALUE="1.58" />
+		</RELATION>
+		<RELATION TARGET="b18" LANDMARK="lamp1">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.58" />
+		</RELATION>
+		<RELATION TARGET="b18" LANDMARK="b17">
+			<ATTRIBUTE NAME="position" VALUE="left" />
+			<ATTRIBUTE NAME="distance" VALUE="0.5" />
+		</RELATION>
+		<RELATION TARGET="b18" LANDMARK="b17">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="0.5" />
+		</RELATION>
+	</DOMAIN>
+
+	<DOMAIN ID="room-6">
+		<RELATION TARGET="d10" LANDMARK="b20">
+			<ATTRIBUTE NAME="position" VALUE="right" />
+			<ATTRIBUTE NAME="distance" VALUE="0.92" />
+		</RELATION>
+		<RELATION TARGET="d10" LANDMARK="b20">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="0.92" />
+		</RELATION>
+		<RELATION TARGET="b14" LANDMARK="b20">
+			<ATTRIBUTE NAME="position" VALUE="slightlyleft" />
+			<ATTRIBUTE NAME="distance" VALUE="0.92" />
+		</RELATION>
+		<RELATION TARGET="b14" LANDMARK="b20">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="0.92" />
+		</RELATION>
+		<RELATION TARGET="b20" LANDMARK="d10">
+			<ATTRIBUTE NAME="position" VALUE="left" />
+			<ATTRIBUTE NAME="distance" VALUE="0.92" />
+		</RELATION>
+		<RELATION TARGET="b20" LANDMARK="d10">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="0.92" />
+		</RELATION>
+		<RELATION TARGET="b20" LANDMARK="b14">
+			<ATTRIBUTE NAME="position" VALUE="slightlyright" />
+			<ATTRIBUTE NAME="distance" VALUE="0.92" />
+		</RELATION>
+		<RELATION TARGET="b20" LANDMARK="b14">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="0.92" />
+		</RELATION>
+	</DOMAIN>
+
+	<DOMAIN ID="room-5"></DOMAIN>
+
+	<DOMAIN ID="room-4">
+		<RELATION TARGET="d8" LANDMARK="b19">
+			<ATTRIBUTE NAME="position" VALUE="left" />
+			<ATTRIBUTE NAME="distance" VALUE="1.1" />
+		</RELATION>
+		<RELATION TARGET="d8" LANDMARK="b19">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.1" />
+		</RELATION>
+		<RELATION TARGET="couch1" LANDMARK="b19">
+			<ATTRIBUTE NAME="position" VALUE="slightlyright" />
+			<ATTRIBUTE NAME="distance" VALUE="1.48" />
+		</RELATION>
+		<RELATION TARGET="couch1" LANDMARK="b19">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.48" />
+		</RELATION>
+		<RELATION TARGET="b19" LANDMARK="d8">
+			<ATTRIBUTE NAME="position" VALUE="right" />
+			<ATTRIBUTE NAME="distance" VALUE="1.1" />
+		</RELATION>
+		<RELATION TARGET="b19" LANDMARK="d8">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.1" />
+		</RELATION>
+		<RELATION TARGET="b19" LANDMARK="couch1">
+			<ATTRIBUTE NAME="position" VALUE="slightlyright" />
+			<ATTRIBUTE NAME="distance" VALUE="1.48" />
+		</RELATION>
+		<RELATION TARGET="b19" LANDMARK="couch1">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.48" />
+		</RELATION>
+	</DOMAIN>
+
+	<DOMAIN ID="room-3">
+		<RELATION TARGET="p2" LANDMARK="b11">
+			<ATTRIBUTE NAME="position" VALUE="right" />
+			<ATTRIBUTE NAME="distance" VALUE="1" />
+		</RELATION>
+		<RELATION TARGET="p2" LANDMARK="b11">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1" />
+		</RELATION>
+		<RELATION TARGET="b11" LANDMARK="p2">
+			<ATTRIBUTE NAME="position" VALUE="left" />
+			<ATTRIBUTE NAME="distance" VALUE="1" />
+		</RELATION>
+		<RELATION TARGET="b11" LANDMARK="p2">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1" />
+		</RELATION>
+	</DOMAIN>
+
+	<DOMAIN ID="room-2">
+		<RELATION TARGET="d5" LANDMARK="b2">
+			<ATTRIBUTE NAME="position" VALUE="right" />
+			<ATTRIBUTE NAME="distance" VALUE="1.3" />
+		</RELATION>
+		<RELATION TARGET="d5" LANDMARK="b2">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.3" />
+		</RELATION>
+		<RELATION TARGET="flower1" LANDMARK="b2">
+			<ATTRIBUTE NAME="position" VALUE="left" />
+			<ATTRIBUTE NAME="distance" VALUE="1.38" />
+		</RELATION>
+		<RELATION TARGET="flower1" LANDMARK="b2">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.38" />
+		</RELATION>
+		<RELATION TARGET="b2" LANDMARK="d5">
+			<ATTRIBUTE NAME="position" VALUE="left" />
+			<ATTRIBUTE NAME="distance" VALUE="1.3" />
+		</RELATION>
+		<RELATION TARGET="b2" LANDMARK="d5">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.3" />
+		</RELATION>
+		<RELATION TARGET="b2" LANDMARK="flower1">
+			<ATTRIBUTE NAME="position" VALUE="right" />
+			<ATTRIBUTE NAME="distance" VALUE="1.38" />
+		</RELATION>
+		<RELATION TARGET="b2" LANDMARK="flower1">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="1.38" />
+		</RELATION>
+		<RELATION TARGET="b6" LANDMARK="b7">
+			<ATTRIBUTE NAME="position" VALUE="right" />
+			<ATTRIBUTE NAME="distance" VALUE="0.4" />
+		</RELATION>
+		<RELATION TARGET="b6" LANDMARK="b7">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="0.4" />
+		</RELATION>
+		<RELATION TARGET="b7" LANDMARK="b6">
+			<ATTRIBUTE NAME="position" VALUE="left" />
+			<ATTRIBUTE NAME="distance" VALUE="0.4" />
+		</RELATION>
+		<RELATION TARGET="b7" LANDMARK="b6">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="0.4" />
+		</RELATION>
+		<RELATION TARGET="b7" LANDMARK="b8">
+			<ATTRIBUTE NAME="position" VALUE="slightlyright" />
+			<ATTRIBUTE NAME="distance" VALUE="0.85" />
+		</RELATION>
+		<RELATION TARGET="b7" LANDMARK="b8">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="0.85" />
+		</RELATION>
+		<RELATION TARGET="b8" LANDMARK="b7">
+			<ATTRIBUTE NAME="position" VALUE="leftaround" />
+			<ATTRIBUTE NAME="distance" VALUE="0.85" />
+		</RELATION>
+		<RELATION TARGET="b8" LANDMARK="b7">
+			<ATTRIBUTE NAME="position" VALUE="next" />
+			<ATTRIBUTE NAME="distance" VALUE="0.85" />
+		</RELATION>
+	</DOMAIN>
+
+</RELATIONAL-PROPERTIES>
