@@ -76,28 +76,30 @@ def initialize_gre3d7():
     folds = cross_gre3d7.crossValidation(10, anotacoes)
     return dominios, targets, anotacoes, atributos, participantes, folds
 
-def load_results():
-    files = os.listdir("Resultados/")
+def validate_results(corpus = "", printResults = False):
+    results = load_results(corpus, printResults)
     
+    for exp1 in results.keys():
+        for exp2 in results.keys():
+            if exp1 != exp2:
+                T, p = wilcoxon(results[exp1]["dice"], results[exp2]["dice"])
+                print "Wilcoxon: " + exp1 + " X " + exp2
+                print "T: ", T, " p-value: ", p
+                print 50 * "-"
+
+def load_results(corpus = "", printResults = True):
+    files = os.listdir("Resultados/")
+    results = {}
     for file in files:
         
         f = file.split("_")
-        if f[1] == "validate-furniture":
+        if f[1] == corpus or corpus == "":
+            
             root = ET.parse("Resultados/" + file).getroot()
             dices = [float(dice) for dice in list(root.find("dice").text.replace('[', '').replace(']', '').split(','))]
             masis = [float(masi) for masi in list(root.find("masi").text.replace('[', '').replace(']', '').split(','))]
             accepts = float(root.find("accepts").text)
-            folds = root.find("folds")
-            
-            print "\n"
-            print file
-            print "General:"
-            print 50 * "*"
-            print "Expressions: "
-            print "Dice: " + str(np.mean(dices))
-            print "Masi: " + str(np.mean(masis))
-            print "Accuracy: " + str(accepts / len(dices))
-            print "\n"     
+            folds = root.find("folds")    
             
             acertosT = {}
             totalT = {}
@@ -109,13 +111,29 @@ def load_results():
                         totalT[atributo] = 0.0
                     acertosT[atributo] = acertosT[atributo] + float(attribute.attrib["accepts"])
                     totalT[atributo] = totalT[atributo] + float(attribute.attrib["total"])
-                
-            print "Attributes:"
-            print 15 * "-"     
-            for atributo in acertosT.keys():
-                print "Attribute: " + str(atributo)
-                print "Accuracy: " + str(acertosT[atributo] / totalT[atributo])
-                print 10 * "-" 
+            
+            if printResults == True:
+                print "\n"
+                print file
+                print "General:"
+                print 50 * "*"
+                print "Expressions: "
+                print "Dice: " + str(np.mean(dices))
+                print "Masi: " + str(np.mean(masis))
+                print "Accuracy: " + str(accepts / len(dices))
+                print "\n" 
+                  
+                print "Attributes:"
+                print 15 * "-"     
+                for atributo in acertosT.keys():
+                    print "Attribute: " + str(atributo)
+                    print "Accuracy: " + str(acertosT[atributo] / totalT[atributo])
+                    print 10 * "-" 
+            
+            results[file.split(".")[0]] = {}
+            results[file.split(".")[0]]["dice"] = dices
+            results[file.split(".")[0]]["accepts"] = accepts
+    return results
 
 def save_results(nomeArquivo, resultados, dices, masis, acertos):
     results = ET.Element('results')
@@ -151,4 +169,4 @@ def save_results(nomeArquivo, resultados, dices, masis, acertos):
     tree = ET.ElementTree(results)
     tree.write("Resultados/" + nomeArquivo)
     
-load_results()
+validate_results("stars2")

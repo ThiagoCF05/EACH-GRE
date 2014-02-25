@@ -91,16 +91,16 @@ if __name__ == '__main__':
 #     print "T: ", T, " p-value: ", p
 #     print 50 * "-"
      
-#     T, p = wilcoxon(diceGlobalSuperespecificado, dicePersonalizado)
-#     print "Wilcoxon: Global com Superespecificacao X Personalizado sem Superespecificacao"
-#     print "T: ", T, " p-value: ", p
-#     print 50 * "-"
-#     T, p = wilcoxon(dicePersonalizadoSuperespecificado, dicePersonalizado)
-#     print 50 * "*"
-#     print "Wilcoxon: Personalizado com Superespecificacao X Personalizado sem Superespecificacao"
-#     print "T: ", T, " p-value: ", p
-#     print 50 * "-"
-#     print 50 * "*"
+    T, p = wilcoxon(diceGlobalSuperespecificado, dicePersonalizado)
+    print "Wilcoxon: Global com Superespecificacao X Personalizado sem Superespecificacao"
+    print "T: ", T, " p-value: ", p
+    print 50 * "-"
+    T, p = wilcoxon(dicePersonalizadoSuperespecificado, dicePersonalizado)
+    print 50 * "*"
+    print "Wilcoxon: Personalizado com Superespecificacao X Personalizado sem Superespecificacao"
+    print "T: ", T, " p-value: ", p
+    print 50 * "-"
+    print 50 * "*"
      
     print "\n"
      
